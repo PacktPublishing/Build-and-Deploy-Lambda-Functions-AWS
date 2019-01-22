@@ -1,0 +1,166 @@
+WEBVTT
+
+00:01.610 --> 00:06.240
+Aliasing functions is another important concept on AWOS LAMDA.
+
+00:06.590 --> 00:12.740
+So with aliases what you get is basically tagging capabilities for lambda functions.
+
+00:12.800 --> 00:19.310
+So when you want to invoke your lambda function you don't have to remember the name or any other thing
+
+00:19.310 --> 00:20.300
+about that.
+
+00:20.540 --> 00:25.280
+You just have to know the area and by getting some API calls.
+
+00:25.370 --> 00:32.810
+And after that Aaron you can basically get the alias for that specific version of your ONLY source code
+
+00:32.840 --> 00:36.040
+or lambda function and you want to invoke that.
+
+00:36.200 --> 00:43.280
+So let's say you have couple of environments on a W-S and you're managing your environments with couple
+
+00:43.280 --> 00:50.630
+of lambda codes lambda functions in case and with those lambda functions you're making use of aliases.
+
+00:50.770 --> 00:56.570
+So for let's say you have a production environment you have a staging environment and you have basically
+
+00:56.570 --> 01:02.720
+a development environment and for all of those environments you can basically version your function
+
+01:02.930 --> 01:09.530
+for all of those and you can Elyas all the versions that you have and you can't call these specific
+
+01:09.560 --> 01:12.210
+aliases for specific environments.
+
+01:12.230 --> 01:19.700
+So for a production environment you can create an alias as broad or production and then you can basically
+
+01:19.700 --> 01:25.730
+call or invoke your AWOS lambda function with that production alias just like that.
+
+01:25.770 --> 01:32.830
+And it is very easy and all you have to do is to provide the alias name for your function.
+
+01:32.840 --> 01:37.940
+So now let's see how we can achieve this aliasing with AWOS lambda functions.
+
+01:38.090 --> 01:43.990
+And this is basically a great way to improve productivity with your lambda functions.
+
+01:44.000 --> 01:50.130
+Well you're working with a couple of different environments within the same AWOS account.
+
+01:50.150 --> 01:58.890
+So now let's go up and create our method for creating aliases for lambda function versions.
+
+01:58.910 --> 02:10.380
+So I'll say def and all say create alias for new version.
+
+02:10.400 --> 02:11.370
+All right.
+
+02:11.390 --> 02:20.330
+So what I want to pass in is of course a function name that I want to apply to alias and also an alias
+
+02:20.330 --> 02:24.650
+name that I want to use for this function version.
+
+02:24.650 --> 02:30.420
+And of course diversion that I want to apply this alias for the function.
+
+02:30.560 --> 02:41.330
+So now with the method body all I have to do is return lambda client and create alias and within that
+
+02:41.390 --> 02:49.620
+alias I want to pass in the first as a function name and does going to be a function name of course.
+
+02:49.880 --> 02:54.800
+And after that the name or the alias as name.
+
+02:54.800 --> 03:03.970
+And it is going to be the alias name I'm passing in from my parameters and the function version is diversion.
+
+03:04.060 --> 03:08.900
+Did I want this alias to be applied and also a version.
+
+03:08.930 --> 03:17.540
+And finally I can provide an optional description for this alias so let's say description and within
+
+03:17.540 --> 03:21.190
+this description I'll say this is the.
+
+03:21.920 --> 03:24.740
+And let's just use the alias name.
+
+03:28.210 --> 03:32.180
+And always for function.
+
+03:32.520 --> 03:34.050
+All right.
+
+03:34.250 --> 03:35.270
+Just like that.
+
+03:35.270 --> 03:39.060
+So now let's just go down and code this method.
+
+03:40.630 --> 03:47.760
+Now let's first comment this line out and say create Ellies for a new version.
+
+03:48.050 --> 03:58.310
+And within this method I'll pass in the Python lambda name and as the alias I want to use Prod. to indicate
+
+03:58.310 --> 04:00.310
+this is a production version.
+
+04:00.680 --> 04:07.050
+And in the version section I want to pro-white as one.
+
+04:07.180 --> 04:10.080
+All right so now let's just go on here.
+
+04:10.100 --> 04:16.060
+Run to create our alias and here we go.
+
+04:16.080 --> 04:25.470
+So now let's switch back to our AWOS konsole and if we go and check our qualifiers this time before
+
+04:25.470 --> 04:27.900
+we actually refresh our page.
+
+04:27.900 --> 04:29.190
+You don't see anything.
+
+04:29.370 --> 04:36.010
+So now let's go and hit free fresh and let's go to our qualifiers.
+
+04:36.020 --> 04:37.030
+Back again.
+
+04:37.250 --> 04:38.380
+And here we go.
+
+04:38.480 --> 04:45.290
+We have our production ileus created on AWOS Lamda for our Python lambda function.
+
+04:45.290 --> 04:52.160
+So we have our description and as you can see right bottom of that description we have the version for
+
+04:52.160 --> 04:53.320
+that alias.
+
+04:53.360 --> 05:00.010
+So as you can see creating aliases and tax for your lambda functions as easy as that.
+
+05:00.380 --> 05:07.430
+And I encourage you to use this aliasing for managing a couple of different environments and using the
+
+05:07.430 --> 05:08.730
+same lambda function.

@@ -1,0 +1,64 @@
+WEBVTT
+
+00:01.870 --> 00:08.610
+Getting all the configurations of all your functions with A W-S is also very simple.
+
+00:08.770 --> 00:12.330
+And let's see how we can do that and to do that.
+
+00:12.480 --> 00:24.290
+I'm defining another method I'll say get all functions and I'm not going to pass in this time because
+
+00:24.770 --> 00:28.970
+all I have to do is get all the functions not a specific function.
+
+00:28.970 --> 00:33.720
+So I'll say and let's just fix that typo there.
+
+00:33.910 --> 00:39.520
+When the client and I'm going to call list functions.
+
+00:39.620 --> 00:40.610
+All right.
+
+00:40.610 --> 00:41.980
+That's all I have to do.
+
+00:42.200 --> 00:51.530
+So let's just go down and call this method with wrapped around as a print statement and I'll say get
+
+00:51.590 --> 00:52.560
+all functions.
+
+00:52.560 --> 00:53.980
+All right.
+
+00:53.990 --> 00:59.260
+So I'm just going to go and hit Grun.
+
+00:59.470 --> 01:01.380
+And here we go.
+
+01:01.450 --> 01:08.650
+And as you can see if we scroll down a little bit we have all of our functions on dirty functions indicator
+
+01:08.680 --> 01:10.170
+are key in this case.
+
+01:10.300 --> 01:18.060
+And within that array read how all of our functions we have as the first function our Java lambda function
+
+01:19.390 --> 01:25.620
+and then if we go and scroll down a little bit more we have our Python and the function.
+
+01:25.630 --> 01:30.280
+And if we scroll down a little bit we will see that we are No.
+
+01:30.370 --> 01:32.820
+Yes lambda function.
+
+01:33.210 --> 01:39.850
+So this is basically how you can get all the configurations of for all of your lambda functions on a
+
+01:40.110 --> 01:43.950
+US account and it is very straightforward as you can see.

@@ -1,0 +1,118 @@
+WEBVTT
+
+00:01.680 --> 00:07.140
+Know let's figure out how we can invoke a lambda function using its always.
+
+00:07.250 --> 00:13.910
+So let's say we have the production version for our lambda function on A W-S as present.
+
+00:13.970 --> 00:20.860
+And now we want to invoke this production version of our lambda function our production alias all function.
+
+00:20.870 --> 00:24.900
+So now let's go up and implement our solution.
+
+00:24.980 --> 00:32.170
+So all the find a method and all say invoke
+
+00:36.980 --> 00:42.300
+lambda with alias.
+
+00:42.360 --> 00:47.820
+So I want to pass in a function name as I always do.
+
+00:48.450 --> 00:52.590
+And after that I also want to pass in an alias
+
+00:56.460 --> 00:58.280
+and within my function.
+
+00:58.400 --> 01:07.140
+Or I want to do is basically invoke my function I'll say invoke and within my invocation I'll pass in
+
+01:07.140 --> 01:11.490
+the function name as a function name and the qualifier.
+
+01:11.490 --> 01:19.150
+In this case not the alias you have to be careful about that is of course our alias name.
+
+01:19.170 --> 01:25.650
+All right so now let's go down and call our method.
+
+01:25.650 --> 01:34.030
+So let's just say invoke lambda function not of course lambda function right away.
+
+01:34.050 --> 01:40.050
+Let's just also print out the response from W-S invoke lambda with alias.
+
+01:40.320 --> 01:43.970
+So I'll pass in the Python lambda name.
+
+01:44.310 --> 01:50.880
+And for the alias I'm going to use the alias above the prod alias.
+
+01:50.880 --> 01:51.630
+All right.
+
+01:52.730 --> 02:02.190
+So now let's just go up and hit run to see how we can invoke lambda functions with aliases.
+
+02:02.330 --> 02:03.710
+And here we go.
+
+02:04.040 --> 02:05.090
+Our response is.
+
+02:05.120 --> 02:05.870
+OK.
+
+02:05.960 --> 02:09.680
+And of course we forgot to purchase our payload.
+
+02:09.680 --> 02:15.620
+So it is being displayed as an object but a core object as screaming body.
+
+02:15.620 --> 02:18.220
+So let's just fix that for a second.
+
+02:18.710 --> 02:25.250
+Let's just use the de-code function that we implemented right here and copy that.
+
+02:25.250 --> 02:35.240
+So what I want to do is I want to get the response from this function and let's just say response equals
+
+02:35.240 --> 02:36.480
+to this guy.
+
+02:36.710 --> 02:42.720
+And after that what I want to do is basically let's just get rid of this line.
+
+02:44.190 --> 02:54.290
+And I just want to uncomment this line and I want to print out the payload in a decoded format.
+
+02:54.290 --> 02:57.810
+All right so now let's just go and hit run again.
+
+02:59.770 --> 03:01.370
+And here we go.
+
+03:01.930 --> 03:10.000
+We could invoke our window function with a proper alias so we provided our product alias to our Alamdar
+
+03:10.000 --> 03:10.680
+function.
+
+03:10.930 --> 03:16.250
+And with that alias we could invoke our function as we expected.
+
+03:16.600 --> 03:24.340
+Aliases are important parts of AWOS lambda and it's a great feature say great benefit for using lambda
+
+03:24.340 --> 03:25.800
+functions.
+
+03:25.840 --> 03:31.990
+I encourage you to do so and use the aliases and versioning with all member functions so that you can
+
+03:32.020 --> 03:39.160
+manage the source code manage your change as easily as you could do with a source version control system.

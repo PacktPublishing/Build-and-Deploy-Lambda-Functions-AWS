@@ -1,0 +1,187 @@
+WEBVTT
+
+00:01.900 --> 00:08.350
+Apart from various other benefits of using lambda functions there are several other ways that you can
+
+00:08.350 --> 00:12.060
+make use of and improve your roof loss with lambda functions.
+
+00:12.220 --> 00:17.800
+And one example of that is the environment variables show and moment variables.
+
+00:17.800 --> 00:24.340
+If we go back to our Ada we use Casal are located under the environment variable section.
+
+00:24.340 --> 00:32.410
+So if you define your moment variables as key value pairs as you do within your local computer and basically
+
+00:32.410 --> 00:39.880
+anywhere you can use those variables to process some data to take some actions regarding other resources
+
+00:39.880 --> 00:41.100
+on AWOS.
+
+00:41.350 --> 00:44.790
+So in this way we're going to discover that feature.
+
+00:44.920 --> 00:51.730
+And we're going to update the configuration of our lambda function and we're going to see that we can
+
+00:51.730 --> 00:58.110
+use those in mind variables and we can basically read those to process some data with those implement
+
+00:58.120 --> 00:59.150
+variables.
+
+00:59.530 --> 01:07.120
+So let's go back to our project and from there what I'm going to do is I'm going to define another method.
+
+01:07.180 --> 01:13.840
+So within this method I'm expecting to add some environment variables to my lambda function.
+
+01:13.840 --> 01:29.580
+So I'll say add underscore environment variables to and list is fixed at Type 2 and 2 lambda.
+
+01:29.580 --> 01:30.790
+All right.
+
+01:30.970 --> 01:35.850
+So within this method I have to pass in a couple of things.
+
+01:35.860 --> 01:42.130
+But of course this is optional but I want to reuse this method for my other lambda functions so I'll
+
+01:42.130 --> 01:51.840
+just pass in the function name and also the variables that I want to update on my function configuration.
+
+01:52.060 --> 02:02.650
+So within this method I'll return when the client got and for that purpose I have to use the update
+
+02:02.650 --> 02:04.830
+function configuration method.
+
+02:04.940 --> 02:11.170
+This update function configuration method provides a couple of alternatives that we can apply to our
+
+02:11.170 --> 02:12.090
+functions.
+
+02:12.310 --> 02:19.330
+And as you will see with our upcoming lectures with the update function configuration method you can
+
+02:19.330 --> 02:27.070
+basically update the configuration of your lender like using the memory or the time out or in our case
+
+02:27.220 --> 02:29.170
+with the environment variables.
+
+02:29.230 --> 02:35.560
+So the configuration update process is very straightforward and you'll see how easy it is to do so.
+
+02:35.560 --> 02:46.540
+So now let's just say update function configuration and within this method I'll use my parameters.
+
+02:46.570 --> 02:55.580
+So I'll say function name equals function name and the environment equals environment.
+
+02:56.830 --> 03:04.000
+So of course the environment is going to be equal to our variables that we're going to pass in as key
+
+03:04.000 --> 03:05.280
+value pairs.
+
+03:05.290 --> 03:07.860
+So now let's go down.
+
+03:08.110 --> 03:11.600
+And first to comment these lines out.
+
+03:11.740 --> 03:19.510
+And after that the first thing that I want to do is provide my variables my environment variable so
+
+03:19.510 --> 03:23.200
+let's just say n variables equals.
+
+03:23.200 --> 03:30.370
+So I have to provide a dictionary as you can guess as I always do with my Python implementations.
+
+03:30.490 --> 03:38.110
+And in this case since enrolment variables are key value pairs I have to provide them within a dictionary.
+
+03:38.110 --> 03:47.920
+So I'll say under the keyword variables of course in a capitalized format that's what a W-S is expecting
+
+03:47.920 --> 03:48.800
+from me.
+
+03:49.000 --> 03:57.490
+And within another dictionary inside that variables definition no I can provide my key value pairs as
+
+03:57.730 --> 03:59.780
+to be used in my variables.
+
+03:59.860 --> 04:11.140
+So I'll say in capitalized format and underscore voire underscore test and this environment variable
+
+04:11.140 --> 04:15.060
+is going to be equal to this says
+
+04:17.860 --> 04:23.080
+an environment variable.
+
+04:23.140 --> 04:25.030
+Simple as that.
+
+04:25.030 --> 04:33.100
+So now let's just make use of this environment variable within our function so update it and to do that
+
+04:33.700 --> 04:40.200
+let's just call our update function update and let's just check out.
+
+04:40.230 --> 04:46.310
+Oh OK we have the name of the method as add an environment variable to lambda.
+
+04:46.350 --> 04:55.710
+So let's just call that an environment variable to lambda and I'll pass in the Python lambda name.
+
+04:56.310 --> 05:03.970
+And also I'll pass in the environment variables as my environment variables just like that.
+
+05:04.170 --> 05:08.980
+So now we can basically call and see what's going to happen.
+
+05:09.420 --> 05:13.100
+So I'm just going to go and hit Grun.
+
+05:13.330 --> 05:14.880
+And here we go.
+
+05:14.890 --> 05:19.270
+So now let's go back to our AWOS console and see what happened there.
+
+05:20.180 --> 05:28.520
+If we go back to our functions and from there if we go to our Python lambda function and under our environment
+
+05:28.520 --> 05:36.860
+variables as you can see we could successfully update our Python lambda function for our variable.
+
+05:37.050 --> 05:41.590
+So we have the key as and underscore var underscore test.
+
+05:41.600 --> 05:49.010
+And as the value of that key we have this is an environment variable exclamation point just like that.
+
+05:49.010 --> 05:55.590
+So as you can see this were easy and straightforward to update the configuration of your lambda function.
+
+05:56.950 --> 06:02.380
+So in the next video we're going to explore how we can make use of this environment variable within
+
+06:02.380 --> 06:03.400
+our lambda function.
+
+06:03.400 --> 06:07.650
+So you're going to see how easy that is also to process.
+
+06:07.720 --> 06:09.160
+So I'll see on the next media.

@@ -1,0 +1,58 @@
+WEBVTT
+
+00:01.580 --> 00:09.260
+Now for our access policy in Exige role to be useful actually useful We're going to have to attach these
+
+00:09.260 --> 00:11.080
+resources together.
+
+00:11.420 --> 00:15.000
+And for this last part of I am operations.
+
+00:15.020 --> 00:18.080
+Let's just go up and create our method.
+
+00:18.350 --> 00:29.110
+So I'm going to say attach access policy to execution Rob.
+
+00:29.240 --> 00:30.650
+All right.
+
+00:30.650 --> 00:41.840
+So within this method what I'm going to do is read her I am client dot attach roll policy.
+
+00:41.840 --> 00:49.820
+So this is the method that I'm looking for and I have to pass in the roll name first and that is of
+
+00:49.820 --> 00:58.040
+course the Lamda role and to policy Aaron is of course the one that I have here.
+
+00:58.070 --> 01:02.850
+So let's just get it where the axis policy error.
+
+01:02.930 --> 01:04.320
+And here we go.
+
+01:04.850 --> 01:10.030
+So now let's go down and call our Methot and see it in action.
+
+01:10.280 --> 01:15.710
+So let's just say attach access policy to execution rule.
+
+01:15.860 --> 01:21.780
+I'm going to go and hit run.
+
+01:22.010 --> 01:23.620
+And here we go.
+
+01:23.690 --> 01:33.110
+Our request is successful with HTP through hundert and our access policy is attached to our execution
+
+01:33.110 --> 01:33.550
+roll.
+
+01:33.560 --> 01:38.480
+So we are ready to move on with creating our lambda function.
+
+01:38.750 --> 01:42.090
+So to do that I'll be seeing you on the next video.

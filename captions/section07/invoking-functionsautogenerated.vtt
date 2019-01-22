@@ -1,0 +1,142 @@
+WEBVTT
+
+00:01.730 --> 00:09.860
+Up until now we deployed several lambda functions to AWOS we first deployed a python Lamda and then
+
+00:10.010 --> 00:17.260
+we've gone to a node just Lamda and deployed that and after that we created and deployed a Javal and
+
+00:17.270 --> 00:18.180
+a function.
+
+00:18.290 --> 00:24.130
+But how about invoking those functions and getting a response from A W-S.
+
+00:24.200 --> 00:26.060
+So it is very easy to do so.
+
+00:26.130 --> 00:30.730
+It lets us learn how we can do that right now for that purpose.
+
+00:30.740 --> 00:38.780
+I'm just going to go down under my D-plus function and from there I'll define my method and say invoke
+
+00:39.410 --> 00:42.930
+where the function.
+
+00:43.600 --> 00:53.560
+And within this method I'm just going to pass in the function name and in this method all I have to
+
+00:53.560 --> 01:04.100
+do is return a lambda client then invoke and I have to pass in the function name as a parameter.
+
+01:04.170 --> 01:11.610
+So I'll just passed in the function name and that's basically all you have to do to invoke a function
+
+01:12.030 --> 01:13.270
+on a day with us.
+
+01:13.380 --> 01:17.310
+So let's go down here and call our method.
+
+01:17.580 --> 01:25.460
+And for that purpose I'm going to use my Python lambda and as you can see it is something like this.
+
+01:26.220 --> 01:34.290
+So we're going to have to see the 300 status code and message as the hello from Python lambda function.
+
+01:34.290 --> 01:37.150
+So let's just get this response from AWOS.
+
+01:37.380 --> 01:43.710
+So now what I have to do is I have to get a response from a AWOS in a variable.
+
+01:43.830 --> 01:51.890
+So I'll use response equals invoke lambda function.
+
+01:52.210 --> 01:57.800
+And for the function name I use Java lambda name not that.
+
+01:57.820 --> 02:02.920
+So I want the python file Python lambda to be executed.
+
+02:03.070 --> 02:07.390
+So I'll just pass in Python lambda name just like that.
+
+02:07.390 --> 02:13.880
+So to read the response properly from a WS we're going to have to do a couple of things.
+
+02:13.900 --> 02:20.230
+We can't just read this response from a WS because it is formatted in a bottle core away.
+
+02:20.350 --> 02:27.130
+So we're going to have to decode the response from a because it is isn't again bytes format with the
+
+02:27.130 --> 02:30.250
+binary format of a core library.
+
+02:30.520 --> 02:39.430
+So to do that I have to basically get the response and response object's payload payload is basically
+
+02:39.700 --> 02:48.540
+the response data from a US apart from the meta data and the headers of the response from AWOS payload
+
+02:48.550 --> 02:50.900
+is the part that we're interested in.
+
+02:51.070 --> 02:56.310
+Because again it is including the response that we need from our function.
+
+02:56.530 --> 03:03.540
+So with the payload we're going to have to read this payload and after reading this it is not enough.
+
+03:03.640 --> 03:08.830
+We're going to have to decode it so that we can read it with as a plain text.
+
+03:08.860 --> 03:14.330
+In this case so to actually get the output within our console.
+
+03:14.350 --> 03:19.400
+I'm going to wrap this around with a print statement and here we go.
+
+03:19.540 --> 03:26.290
+So I can just go up here and comment this line out our previous deployed function call and now I can
+
+03:26.290 --> 03:29.300
+basically call and see it in action.
+
+03:29.300 --> 03:34.510
+So let's just go and hit run.
+
+03:34.880 --> 03:36.150
+And here we go.
+
+03:36.350 --> 03:38.990
+As you can see we could see the status quo.
+
+03:39.000 --> 03:39.990
+Two hundred.
+
+03:40.130 --> 03:47.600
+And the message as Hello from Python lambda function just as we were expecting with our o them the function
+
+03:47.650 --> 03:48.430
+of Pi.
+
+03:48.500 --> 03:49.960
+And as you can see here.
+
+03:50.150 --> 03:56.190
+So we could basically invoke our Python lambda function within our Python code again.
+
+03:56.660 --> 04:02.850
+And as you can see invoking a lambda function is quite straightforward and quite easy.
+
+04:02.870 --> 04:05.720
+All you have to do is pass it in the function name.
+
+04:05.810 --> 04:11.810
+And if you're in the correct region then you can basically and easily invoke the Alem the function that
+
+04:11.810 --> 04:12.840
+you're interested in.

@@ -1,0 +1,88 @@
+WEBVTT
+
+00:01.560 --> 00:07.590
+Updating the configuration of an existing AWOS lambda function is another important concept that you
+
+00:07.590 --> 00:10.520
+should understand and apply it easily.
+
+00:10.950 --> 00:18.450
+And actually we saw an example of that while we were updating the function code for our Python window
+
+00:18.450 --> 00:20.370
+function as you can see here.
+
+00:20.580 --> 00:25.940
+And this time let's use another way for updating the configuration for our lambda function.
+
+00:26.040 --> 00:31.070
+And this time let's change the memory size that we have for the lambda function.
+
+00:31.080 --> 00:38.790
+All right now all of this go down here and define a new method and I'll say and I want to increase the
+
+00:38.790 --> 00:48.240
+memory size of my when the function ulcerate increase lambda execution memory.
+
+00:48.240 --> 00:56.370
+All right so now I want to pass in the function name that I want to increase the memory and also the
+
+00:56.550 --> 01:00.170
+new memory size that I want to apply to this function.
+
+01:00.330 --> 01:11.550
+So I'll say new memory and new memory size actually and within my method I want to return lambda client
+
+01:12.120 --> 01:19.410
+and say update function can figuration
+
+01:21.850 --> 01:29.140
+and the function name this time is as always a function name.
+
+01:29.140 --> 01:37.060
+From my parameters and this time I want to increase the memory size not the code or source code of my
+
+01:37.060 --> 01:38.190
+lambda function.
+
+01:38.290 --> 01:47.560
+I'll pass in memory size and with my memory size key I want to pass in my new memory size.
+
+01:47.560 --> 01:51.350
+So let's just go down and call our method.
+
+01:51.370 --> 01:54.140
+So let's just comment this Lynell first.
+
+01:54.160 --> 02:03.250
+And now let's say increase lambda execution memory and for the function name I pass in my Python window
+
+02:03.250 --> 02:11.510
+function and I'm going to provide two hundred and fifty six as the new memory of my lambda function.
+
+02:11.590 --> 02:18.200
+Right now let's go and hit run and see what's going to happen.
+
+02:18.230 --> 02:19.440
+Here we go.
+
+02:19.610 --> 02:22.670
+Let's switch back to our AWOS console.
+
+02:23.120 --> 02:30.280
+And as you can remember our initial memory size what was one hundred and twenty eight.
+
+02:30.410 --> 02:43.090
+If we go and hit three fresh and if we go a little bit down and here we go our memory site is now updated
+
+02:43.120 --> 02:50.050
+to 200 and 56 as we expect it with our code.
+
+02:50.060 --> 02:51.380
+All right.
+
+02:51.590 --> 02:57.710
+This is basically how we can update the memory size of your lambda function and it is very easy to do
+
+02:57.710 --> 02:59.770
+so as you saw with our example.

@@ -1,0 +1,328 @@
+WEBVTT
+
+00:01.830 --> 00:05.260
+So now we're ready to deploy our Java lambda function.
+
+00:05.490 --> 00:11.700
+But to do that we're going to first have to provide the proper runtime for Java and we're going to have
+
+00:11.700 --> 00:14.390
+to do our job for them to function and name.
+
+00:14.460 --> 00:15.520
+So to do that.
+
+00:15.540 --> 00:22.860
+I'm just going to go up in my project in my land of functions that profile and from there I'm just going
+
+00:22.860 --> 00:29.370
+to provide couple of things and first of those is of course the Java lambda function name
+
+00:32.110 --> 00:41.620
+Java lambda underscore name and I'll say basically Java lambda and function well.
+
+00:41.680 --> 00:42.940
+All right.
+
+00:42.970 --> 00:55.360
+So after this statement I'm going to have to provide the runtime for my Java and I'll say Java 8 runtime.
+
+00:55.430 --> 01:02.350
+So as do value I'll provide as underscores Java 8 just like that.
+
+01:02.350 --> 01:06.830
+So basically we're ready to move on with our implementation.
+
+01:07.150 --> 01:09.960
+And let's just go to our deploying function.
+
+01:10.240 --> 01:17.950
+And as you can see our deploying function is basically reading all the sources under certain directories
+
+01:18.190 --> 01:23.970
+and uploading the file as a zip file as the bytes of those zip files.
+
+01:23.980 --> 01:27.560
+So in the Java case in the jar file upload.
+
+01:27.630 --> 01:29.190
+This is kind of different.
+
+01:29.290 --> 01:36.300
+So we can't put our joão file under zip and we can't use that qualifier properly.
+
+01:36.370 --> 01:43.240
+So to get the most out of our Java lambda function and use it properly we're going to have to upload
+
+01:43.270 --> 01:46.780
+our jar file to AWOS and to do that.
+
+01:46.930 --> 01:53.020
+I'm just going to go to my utility class and provide the utility method so that we can read the jar
+
+01:53.020 --> 01:56.120
+file under the path that we're going to provide.
+
+01:56.230 --> 02:02.710
+And from there we can basically pass in the bytes of that jar file so that we can basically process
+
+02:02.740 --> 02:05.170
+our invocation with lambda.
+
+02:05.170 --> 02:12.280
+So I'm just going to go to my Tilse class and that's just going to go down here and I'll provide another
+
+02:12.280 --> 02:15.280
+static method to my implementation.
+
+02:15.580 --> 02:27.080
+And within the static method I'll say basically def read jar file and of course I'm going to pass in
+
+02:27.080 --> 02:35.630
+a path that I'm going to read the java file from an undisclosed end to go and read this jar file from
+
+02:35.630 --> 02:41.720
+the path that I'm going to provide but I'm going to have to read this file with its bytes not just the
+
+02:41.930 --> 02:44.360
+basic way of reading any file.
+
+02:44.480 --> 02:53.690
+I'm going to have to read with bytes so I'll say with open and I'm just going to provide the path that
+
+02:53.690 --> 02:58.820
+I'm trying to read my file and to read the bytes of a file in Python.
+
+02:59.090 --> 03:02.350
+As you're aware of that or if you don't.
+
+03:02.510 --> 03:06.170
+RB Is there a way to read the bytes of a given file.
+
+03:06.170 --> 03:14.600
+So in this case I'm going to read my file as bytes and unscrewing to pass that in in a variable called
+
+03:14.960 --> 03:16.070
+binary file.
+
+03:16.070 --> 03:16.930
+All right.
+
+03:17.300 --> 03:24.320
+So with this binary file I'm going to read all the bytes of that file and pass that into a data.
+
+03:24.510 --> 03:31.180
+And for that purpose I'm just going to read the binary file with the READ statement.
+
+03:31.220 --> 03:31.810
+All right.
+
+03:31.940 --> 03:38.750
+So this is basically going to read all the bytes of that java jar file and pass that back to me.
+
+03:38.750 --> 03:44.570
+So all I have to do now is basically return this data just like that.
+
+03:44.570 --> 03:51.140
+So with this method we'll be able to read the jar file with its bytes and we can basically upload it
+
+03:51.410 --> 03:53.690
+to A W-S lambda.
+
+03:53.690 --> 03:57.670
+So now we can go back and move on with her implementation.
+
+03:57.980 --> 04:02.510
+And as you can see our generic implementation is in kind of a danger.
+
+04:02.600 --> 04:09.110
+So we're going to have to find another way to make use of this method for all of our functions like
+
+04:09.290 --> 04:11.720
+Python no Gere's and Java.
+
+04:11.810 --> 04:19.780
+So I'm going to go and refactor this a little so we can make use of this method with all of our implementation.
+
+04:19.850 --> 04:27.620
+So the full path is going to be the same power park for all of our functions so we can keep that but
+
+04:27.620 --> 04:32.450
+the zip file is going to have to change because for all the functions we're going to have to pass in
+
+04:32.450 --> 04:35.680
+the bytes of a jar file not a zip file.
+
+04:35.690 --> 04:41.000
+So for that purpose I'm just going to move down a little bit and open up a space right here.
+
+04:41.150 --> 04:47.660
+So I'm going to check if the runtime is Java on time that I'm going to have to provide the jar file.
+
+04:47.660 --> 04:51.890
+Otherwise I'll just basically pass in the price of the zip file.
+
+04:51.890 --> 05:05.810
+So let's just say if runtime is not Java on time then basically use the zip file as the zip bytes.
+
+05:05.810 --> 05:10.620
+That's basically the way for no JS and Python lambda functions.
+
+05:10.730 --> 05:18.770
+But otherwise if it is the Jobar on time in the else case I'm basically going to go and read the zip
+
+05:18.770 --> 05:20.720
+file as the jar file.
+
+05:20.720 --> 05:28.820
+So let's just say you Tilse dot read jar file and I'm basically going to pass in the folder path.
+
+05:28.880 --> 05:30.200
+All right.
+
+05:30.200 --> 05:32.130
+So let's just say folder path.
+
+05:32.300 --> 05:33.820
+And here we go.
+
+05:33.860 --> 05:35.960
+We're good to go with our implementation.
+
+05:36.140 --> 05:42.600
+So before we move on let's go back to Eclipse and copy our job file.
+
+05:42.680 --> 05:49.660
+So and before actually doing that let's just go and create the directory for our jar file.
+
+05:49.670 --> 05:56.690
+So all this go and create a new directory and I'll say Java underscore lambda.
+
+05:56.720 --> 05:57.750
+All right.
+
+05:58.040 --> 06:07.590
+So within this directory Let's go to our eclipse and from there let's just copy our D-Mo. that jar.
+
+06:08.020 --> 06:13.580
+And if we go back and paste it in right here.
+
+06:13.800 --> 06:20.060
+And here we go we have our jar file ready to be deployed on a W-S.
+
+06:20.070 --> 06:25.810
+So now we can basically call our method for deploying our Java lambda function.
+
+06:25.990 --> 06:27.090
+All right.
+
+06:27.090 --> 06:35.250
+So all we have to do is to print out the response from a table with us so that see if it's successful
+
+06:35.250 --> 06:36.100
+or not.
+
+06:36.390 --> 06:44.250
+And within the deploy our lambda function I'm just going to pass in the name as Java lambda name.
+
+06:44.340 --> 06:51.210
+Runtime is of course going to be Java 8 runtime and the handler is the tricky part with Java lambda
+
+06:51.210 --> 06:51.990
+functions.
+
+06:52.140 --> 07:00.240
+So to provide a proper handler method with Java you're going to have to be careful about the way that
+
+07:00.270 --> 07:08.160
+you provide your handler the handlers are not simple as with the nodes and python files you're going
+
+07:08.160 --> 07:14.310
+to have to be specific about your package and your class and the method that you want to handle the
+
+07:14.310 --> 07:15.200
+request.
+
+07:15.210 --> 07:24.280
+So if we go back to our eclipse and to our source file our we and the function and lets us open up our
+
+07:24.280 --> 07:33.430
+function and from there as you can see we have the package as com dot Amazon AWOS that lambda that D-Mo..
+
+07:33.490 --> 07:40.430
+So we're going to have to first use that qualifier so that we can access our class within that package.
+
+07:40.570 --> 07:45.330
+So I'm just going to go back to my pie chart my ID and paste it in.
+
+07:45.610 --> 07:50.250
+And after that we're going to have to pass in the class name for our function.
+
+07:50.530 --> 07:57.050
+So for that I'm just going to copy the class name and go back and paste it in.
+
+07:57.280 --> 08:04.570
+And after that I'm just going to use two semi-colons and after those two semi-colons I'm going to have
+
+08:04.570 --> 08:13.340
+to provide the actual request handler method and which is in this case the string handle requests method.
+
+08:13.360 --> 08:18.070
+So I just copied its name and I just paste it in just like that.
+
+08:18.070 --> 08:22.100
+So this is basically the handler method for job functions.
+
+08:22.150 --> 08:29.010
+You have to be very careful about the handler because it's not simple as Python or no geas equivalences.
+
+08:29.020 --> 08:35.470
+So if we move well with our implementation and we're going to have to pro-ID roll around.
+
+08:35.530 --> 08:40.510
+So I'm just going to provide the lambda roll around and I already have.
+
+08:40.780 --> 08:44.040
+And the source folder is another important part here.
+
+08:44.110 --> 08:54.100
+So we're going to have to pass in the first java lambda directory and after that of course we're going
+
+08:54.100 --> 09:05.950
+to have to provide D-Mo. Dash 1 dot 0.0 dot jar just like that.
+
+09:06.270 --> 09:11.760
+So we're basically ready to move on and deploy our Java lambda function.
+
+09:12.240 --> 09:19.050
+So now I'm just going to go and comment out the previous line and now I'm just going to go and hit run
+
+09:19.170 --> 09:20.920
+and see what's going to happen.
+
+09:23.620 --> 09:30.670
+And since this is a Java lambda function and our jar file is kind of huge around 10 megabytes or so
+
+09:30.910 --> 09:38.020
+with a very basic configuration because of the dependencies of Java and the runtime that has to be provided
+
+09:38.110 --> 09:39.430
+along with it.
+
+09:39.490 --> 09:42.490
+So is going to take some time for function to upload.
+
+09:42.520 --> 09:44.230
+And here we go.
+
+09:44.440 --> 09:50.720
+Our process is already complete and we have the status code as 200 and 1.
+
+09:50.770 --> 09:58.660
+So it is basically created so we can go to our AWOS Casal and check out our Java lambda function and
+
+09:58.660 --> 09:59.650
+to do that.
+
+09:59.650 --> 10:00.920
+I'll see you on the next video.

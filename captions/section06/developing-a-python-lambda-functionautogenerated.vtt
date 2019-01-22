@@ -1,0 +1,133 @@
+WEBVTT
+
+00:01.460 --> 00:07.790
+Now we're ready to create our very first lambda function for that purpose Of course I'm going to choose
+
+00:07.790 --> 00:12.560
+Python and now James and Joe will follow along.
+
+00:12.560 --> 00:21.140
+So for our Python lambda function code I'm going to go to my source directory and from there I'm going
+
+00:21.140 --> 00:35.010
+to Right-Click and from new I'm going to create a new directory and I'll say Python and underscore lambda.
+
+00:35.030 --> 00:36.030
+All right.
+
+00:36.800 --> 00:47.090
+So with this python lambda I'm going to create a python file and I'm going to name it as lambda underscore
+
+00:47.690 --> 00:50.630
+function just like that.
+
+00:50.660 --> 00:55.960
+So our function is written to be implemented or developed.
+
+00:56.030 --> 01:04.340
+So for our Lenda function we first have to have an initial point that our lender function can be started
+
+01:04.580 --> 01:05.730
+to invoke.
+
+01:05.990 --> 01:15.050
+And for that purpose lambda has a concept called handler so handlers are basically a method in that
+
+01:15.050 --> 01:20.880
+programming language that you can create for the starting point of view or lambda function.
+
+01:21.080 --> 01:28.460
+And for that purpose I'm going to first create and handler method and that handler method is going to
+
+01:28.460 --> 01:30.930
+look like something like this.
+
+01:30.950 --> 01:38.960
+So I'll say händler and I should note that the handler method can be in any name because we're going
+
+01:38.960 --> 01:45.980
+to have to provide the qualifying method name to our handler naming while we create our lambda function
+
+01:46.070 --> 01:47.270
+on AWOS.
+
+01:47.330 --> 01:50.250
+So you can basically give it any name you want.
+
+01:50.660 --> 01:58.640
+And after that information there are two things that we have to pass in to our lambda function to successfully
+
+01:58.640 --> 02:00.820
+process it on a with us.
+
+02:01.040 --> 02:07.470
+And the first thing is the event and the next thing is the context of all the land the function.
+
+02:07.610 --> 02:16.280
+So the evil part is actually the event driven scenario event executer of the Alamdar function in case
+
+02:16.280 --> 02:24.080
+of an event like let's say you're uploading an object to an as three bucket and you want that to be
+
+02:24.140 --> 02:24.900
+executed.
+
+02:24.920 --> 02:28.800
+A lambda function right after that with an event.
+
+02:28.910 --> 02:36.350
+So in that case that event is going to be catched with our lambda function and all the context of that
+
+02:36.350 --> 02:44.660
+event is going to be injected into this event where you will just like we see here and the context is
+
+02:44.720 --> 02:50.410
+actually the environment the context that we have to function is being executed.
+
+02:50.600 --> 02:57.590
+So the context is useful in lots of scenarios like if you want to know the environment that you're running
+
+02:57.590 --> 03:03.620
+your lambda function or if you want to know the resources that you're accessing with your land the function
+
+03:03.980 --> 03:06.150
+context is useful.
+
+03:06.590 --> 03:14.450
+So after giving you this information for our first lambda function I'm going to have to provide a simple
+
+03:14.450 --> 03:22.370
+definition and after that in an iterator way we're going to improve our learn to function with versions
+
+03:22.430 --> 03:24.870
+and we're going to get to that.
+
+03:24.890 --> 03:35.360
+So for our first iteration I'm going to return a simple Jaison and within that Tezaab all first say
+
+03:35.630 --> 03:41.960
+status code and let's just fix that typo and I'll provide 200.
+
+03:42.080 --> 03:42.870
+As it is.
+
+03:42.890 --> 03:43.860
+OK.
+
+03:44.120 --> 03:47.220
+And another thing is the message.
+
+03:47.780 --> 03:55.200
+And within that message I'll say hello from Python.
+
+03:55.880 --> 03:59.460
+Lamda function.
+
+03:59.490 --> 04:01.020
+All right.
+
+04:01.020 --> 04:05.560
+So this is basically going to be a response on our first lambda function.
+
+04:06.000 --> 04:14.080
+So now we are ready to upload and create our lambda function and to do that obviously on the next video.

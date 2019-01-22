@@ -1,0 +1,118 @@
+WEBVTT
+
+00:02.510 --> 00:05.950
+Before we get ready to implement our lambda functions.
+
+00:06.170 --> 00:11.570
+Let's take a look at what we're going to need throughout the course so that we can successfully follow
+
+00:11.570 --> 00:17.600
+along and you can do as I say to create your own functions.
+
+00:17.650 --> 00:24.600
+So when this occurs first and foremost is A W-S account so you don't need an AWOS account.
+
+00:24.610 --> 00:27.180
+And if you don't just don't worry about it.
+
+00:27.340 --> 00:32.210
+AWOS has a free tier available for like up to 1 year.
+
+00:32.320 --> 00:39.550
+And within this one year period you can definitely use lambda functions until a certain period of time
+
+00:39.580 --> 00:43.300
+and that is about a 1 million request per month.
+
+00:43.300 --> 00:47.730
+So that is a huge number and you can definitely want to check this out.
+
+00:47.740 --> 00:54.910
+And you just want to create an AWOS account and I highly encourage you to do that to create an account
+
+00:55.150 --> 00:59.170
+and I'll be showing you how to do that in the following lectures.
+
+00:59.170 --> 01:04.120
+So just bear with me and I'll explain you everything.
+
+01:04.230 --> 01:11.060
+It is not a precondition or not necessary but it is nice to know what a W is lammed those two are from
+
+01:11.060 --> 01:12.310
+A W-S.
+
+01:12.630 --> 01:19.180
+So as I said AWOS lambda is the surrealist application framework from AWOS.
+
+01:19.260 --> 01:25.510
+You can just upload your code you can get the proper permissions and there you go.
+
+01:25.740 --> 01:30.330
+That's all you have to do to have a working application on a W-S.
+
+01:30.480 --> 01:36.900
+You can just execute your functions depending on events or you can just trigger them by your hand or
+
+01:37.110 --> 01:39.010
+by an event.
+
+01:39.030 --> 01:46.520
+That's basically how AWOS lambda functions work and you can integrate AWOS lambda with most of the AWOS
+
+01:46.530 --> 01:47.540
+services.
+
+01:47.580 --> 01:53.700
+Don't worry about it I'll explain you everything you need to know about AWOS lambda and how you can
+
+01:53.700 --> 02:01.970
+make use of it using Python and both three and apart from that I'm expecting you to have a basic knowledge
+
+02:02.000 --> 02:07.830
+of python and apart from basic If your experience with it.
+
+02:07.930 --> 02:13.840
+That's just great because what we're willing to do is going to involve some Python understanding and
+
+02:14.180 --> 02:16.240
+Python data structures.
+
+02:16.400 --> 02:23.690
+It is not necessary to know everything about Python not even an intermediate level but it is nice if
+
+02:23.690 --> 02:27.300
+you have a basic understanding of the language.
+
+02:27.500 --> 02:35.240
+And of course to work with Python we're going to need a python ID that's going to help us to Intellisense
+
+02:35.390 --> 02:42.040
+and that's going to help us to complete our functions and we're going to highlight our syntax within
+
+02:42.080 --> 02:44.600
+ID so idea is important.
+
+02:44.630 --> 02:51.620
+And for that case I'm recommending you to get Pi charme ID from Jet brains and the best part of jet
+
+02:51.620 --> 02:59.130
+brains the best part of Pi charm ID is it has a free community edition that you can get to install without
+
+02:59.130 --> 02:59.870
+a charge.
+
+02:59.900 --> 03:06.770
+So if you don't have enough funding for that purpose you can just go and get the free community edition
+
+03:06.770 --> 03:08.980
+of Pi charme ID.
+
+03:09.010 --> 03:16.390
+So this is basically all you need to have to be successful in the scores and to set up our environment
+
+03:16.450 --> 03:20.080
+and follow along with creating our AWOS account.
+
+03:20.260 --> 03:21.770
+I'll be seeing you on the next section.

@@ -1,0 +1,61 @@
+WEBVTT
+
+00:01.320 --> 00:09.420
+All right we come to an end of another great course on AWOS concepts and this time it was AWOS Lamda
+
+00:09.740 --> 00:14.630
+the surplus backbone of AWOS services and applications.
+
+00:14.910 --> 00:21.480
+So with AWOS Lamda as you could see with the examples and implementations that we did throughout the
+
+00:21.480 --> 00:28.980
+course you can basically implement your applications and basically functions with any language that
+
+00:28.980 --> 00:31.600
+you want using python.
+
+00:31.640 --> 00:40.530
+No Jesus or Java go dot net and some other applications under application programming languages.
+
+00:40.740 --> 00:46.590
+You can basically implement your logic and you can just package your application code and you can deploy
+
+00:46.590 --> 00:52.750
+it to AWOS lambda and you don't even have to manage any kind of infrastructure for your code.
+
+00:52.770 --> 00:54.800
+You don't have to manage the memory size.
+
+00:54.870 --> 01:01.000
+You don't have to manage the C.P. use or this size for application execution.
+
+01:01.050 --> 01:07.290
+All you have to do is provide your source code and AWOS lambda takes care of the rest.
+
+01:07.290 --> 01:16.500
+So AWOS Lumba again is a great service from AWOS and it is again the server is cornerstone for surreals
+
+01:16.500 --> 01:25.540
+application development on AWOS and I highly encourage you to use lambda functions for any kind of purposes
+
+01:25.540 --> 01:27.160
+that you can think of.
+
+01:27.880 --> 01:35.110
+So before I close up I'd like to give you a huge thank you for joining me on this course and I hope
+
+01:35.110 --> 01:42.010
+this was a great journey for you because it was for me and I hope to see you on my upcoming courses
+
+01:42.010 --> 01:48.010
+on a W-S and various other topics like Java spring and so on.
+
+01:48.010 --> 01:50.290
+So thank you so much again.
+
+01:50.350 --> 01:53.300
+And I'd like to see you on my upcoming courses.
+
+01:53.380 --> 01:57.880
+So have a great day and have a great journey on AWOS.

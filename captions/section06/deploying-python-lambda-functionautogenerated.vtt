@@ -1,0 +1,232 @@
+WEBVTT
+
+00:01.030 --> 00:08.980
+So now we can go back to our implementation and let's see what we're going to have to do as an extra
+
+00:09.400 --> 00:10.690
+within our implementation.
+
+00:10.690 --> 00:18.760
+So I'm just going to go back to my lambda functions PI and I'm just going to move well with my implementation.
+
+00:18.760 --> 00:26.890
+So now we have our Eutelsat make zoophile bytes method but less is important so we can make use of it
+
+00:28.060 --> 00:30.280
+from S R C.
+
+00:30.290 --> 00:33.280
+Got you Tilse import your tales.
+
+00:33.280 --> 00:34.050
+All right.
+
+00:34.450 --> 00:43.270
+So that's in place and now we can just go and call our Python both our three method to create our lambda
+
+00:43.270 --> 00:44.110
+function.
+
+00:44.530 --> 00:52.720
+So now I'm just going to go and return lambda a client create function
+
+00:55.160 --> 01:03.120
+and within this method I'm going to have to pass in several things as we defined here.
+
+01:03.410 --> 01:11.790
+So the first thing that I have to pass in is a function name and a function name with B the function
+
+01:11.790 --> 01:20.400
+name from the parameters and the next thing is the runtime runtime is also going to come from our method
+
+01:20.400 --> 01:21.820
+signature.
+
+01:22.470 --> 01:30.600
+And the other thing is the role and that is going to be also passed in from our arguments and handler
+
+01:30.600 --> 01:39.510
+is another thing that we're passing in with our method call and the next thing is the most important
+
+01:39.540 --> 01:45.650
+part of our lambda function which is the code itself and for code over all lambda function.
+
+01:45.720 --> 01:53.370
+We're going to have to pass in a dictionary within that dictionary as we both know three API specifies
+
+01:53.580 --> 02:01.800
+we're going to have to pass in a zip file key and within that zip file key as the value of it.
+
+02:01.940 --> 02:09.840
+I'm just going to pass in the zip file that I created the bytes of that zip file for a W-S to understand
+
+02:09.840 --> 02:10.180
+it.
+
+02:10.260 --> 02:12.080
+All right.
+
+02:12.090 --> 02:17.470
+And the next thing that I want to provide is a timeout for my function.
+
+02:17.730 --> 02:22.130
+So for that purpose I'm just going to create a constant.
+
+02:22.320 --> 02:25.490
+I'm just going to put my intention right here.
+
+02:25.600 --> 02:27.540
+Lambda timeout.
+
+02:27.690 --> 02:35.150
+So I'm just going to give it like 10 seconds and the next thing is the memory size.
+
+02:35.760 --> 02:44.980
+And let's just say lambda memory so we can use this memory in our other lambda functions.
+
+02:45.180 --> 02:52.650
+So are also finally say publish as false.
+
+02:52.760 --> 02:58.120
+And I'm just going to go back to this publish indicator in our upcoming lectures.
+
+02:58.130 --> 03:02.630
+So you just can put that as false or.
+
+03:02.800 --> 03:03.700
+All right.
+
+03:03.850 --> 03:07.980
+So let's just go up and create our constants up there.
+
+03:08.950 --> 03:12.470
+And I'll say lambda timeout.
+
+03:12.760 --> 03:18.460
+And this is going to be 10 seconds and also whammed memory
+
+03:21.370 --> 03:31.780
+and for that I'm just going to pass in 128 megabytes and also another important thing is of course the
+
+03:31.990 --> 03:35.530
+runtime for our Python function.
+
+03:35.530 --> 03:39.250
+So let's just go up and say Python
+
+03:41.620 --> 03:46.990
+3.6 or 36 in this case runtime.
+
+03:47.110 --> 03:48.590
+All right.
+
+03:48.610 --> 03:55.420
+So this is going to be like lowercase Python 3 dot 6.
+
+03:55.420 --> 03:56.080
+All right.
+
+03:56.170 --> 04:01.900
+So we want the Python 3 runtime just as we use with our implementation here.
+
+04:02.320 --> 04:09.820
+So this is basically everything we need to pass in to our will and the function creation function.
+
+04:09.820 --> 04:14.000
+All right so now we're ready to execute this method.
+
+04:14.320 --> 04:23.290
+And for that purpose let's just go down and let's just call our method and print out the response from
+
+04:23.320 --> 04:24.880
+a W-S.
+
+04:24.880 --> 04:30.280
+So this is call deplore lambda function and our function name.
+
+04:30.280 --> 04:39.940
+Let's just go up and create a function name for our Python function of course Python lambda name and
+
+04:40.870 --> 04:46.100
+Python lambda function.
+
+04:46.240 --> 04:46.880
+All right.
+
+04:46.960 --> 04:56.590
+So let's go down and pass that in Python lambda name and 4-D other methods.
+
+04:56.670 --> 05:00.990
+I'm just going to pass in my Python 3.6 runtime.
+
+05:01.220 --> 05:06.970
+And as the handler and of course we forgot to provide in handler too.
+
+05:07.080 --> 05:07.910
+So let's just say
+
+05:10.550 --> 05:14.370
+when the handler.
+
+05:14.410 --> 05:20.670
+So I'm just going to provide a generic handler so I can use that with my functions.
+
+05:20.860 --> 05:28.210
+So for the handler as I said before we're going to have to provide a qualifier method signature with
+
+05:28.210 --> 05:30.340
+the class name of that file.
+
+05:30.340 --> 05:39.400
+So in this case we have our home the function and then we have the method as let's just go back to our
+
+05:39.930 --> 05:44.620
+linear function and we have the method the signature as handler.
+
+05:44.620 --> 05:48.500
+So the first thing is the lambda function name.
+
+05:48.880 --> 05:58.240
+So let's just go back and say lambda and or school function dot handler.
+
+05:58.600 --> 05:59.740
+All right.
+
+05:59.740 --> 06:04.560
+So that's basically our handler method handler signature for AWOS.
+
+06:04.600 --> 06:17.770
+So for our handler again let's just say handler and 40 roll around lambda roll air and we have as the
+
+06:17.770 --> 06:28.020
+constant up there and for our source folder let's just say Python lambda.
+
+06:28.020 --> 06:35.670
+All right now we're basically ready to execute our William the function creation method.
+
+06:36.230 --> 06:39.720
+So now let's go and hit front and see what's going to happen.
+
+06:43.050 --> 06:49.210
+So we basically put the wrong indicator for our region instead of region.
+
+06:49.210 --> 06:54.530
+Underscore name we put in region and that's right here.
+
+06:54.540 --> 07:00.630
+So let's just fix that and Region name and we can hit run again.
+
+07:02.340 --> 07:04.290
+And here we go.
+
+07:04.300 --> 07:06.790
+Our window function is created.
+
+07:06.840 --> 07:11.160
+And as you can see with the created a status code.
+
+07:11.160 --> 07:16.330
+And now let's go to AWOS consul to check our lambda function.
+
+07:16.380 --> 07:19.400
+And for that purpose I'll see on the next video.

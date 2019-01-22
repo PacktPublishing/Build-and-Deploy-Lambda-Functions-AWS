@@ -1,0 +1,64 @@
+WEBVTT
+
+00:01.700 --> 00:09.860
+As with any resource of AWOS lambda functions has basic operational functions that you can access the
+
+00:09.860 --> 00:17.410
+configuration of your function update your function update the configuration get all the functions that
+
+00:17.410 --> 00:21.600
+you have and delete them and so on.
+
+00:21.610 --> 00:30.040
+So to start off with getting a function configuration lets us implement our method to see all the configuration
+
+00:30.040 --> 00:31.960
+regarding a lambda function.
+
+00:32.260 --> 00:42.900
+So I'll say def get function and within this method all I want to pass in is a function name as I always
+
+00:42.900 --> 00:43.600
+do.
+
+00:44.040 --> 00:54.130
+So within this method all I want to do is return Lamda client and yet function.
+
+00:54.820 --> 01:05.100
+And within this method I want to pass in a function name and also function name and the parameter passing
+
+01:05.100 --> 01:08.060
+in from my method signature as you can see here.
+
+01:08.340 --> 01:17.670
+So if I go down and let's first comment these lines out and I basically print out the response for this
+
+01:17.670 --> 01:25.480
+get function call and I'm just going to go and pass in my Python lambda name.
+
+01:25.570 --> 01:31.050
+So let's just go and hit run and get the configuration of our lambda function.
+
+01:33.240 --> 01:34.530
+And here we go.
+
+01:34.620 --> 01:42.780
+Our request is successful and if we scroll down a little bit as you can see we have the configuration
+
+01:42.780 --> 01:46.430
+object under the configuration key within the dictionary.
+
+01:46.560 --> 01:50.180
+We have the function name as Python lambda function.
+
+01:50.400 --> 01:57.530
+We have the air end of the function as you can see here we have the runtime as Python 3.6.
+
+01:57.600 --> 02:02.450
+We have a roll handler and basically everything about glamour function.
+
+02:02.610 --> 02:12.270
+And even as you can see we have the last modified date we have called SSA 256 and so on.
+
+02:12.270 --> 02:18.950
+So this is basically how you can access the configuration the full configuration of your lambda function.

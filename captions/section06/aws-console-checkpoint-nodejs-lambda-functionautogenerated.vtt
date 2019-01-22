@@ -1,0 +1,37 @@
+WEBVTT
+
+00:01.590 --> 00:10.050
+So now I'm on my AWOS console and my Alamdar functions and I'm just going to go and refreshed to see
+
+00:10.050 --> 00:13.060
+my no just LAMDA.
+
+00:13.270 --> 00:14.500
+And there we go.
+
+00:14.620 --> 00:17.240
+We have our No just Lamda function.
+
+00:17.410 --> 00:20.640
+So let's just go ahead and check it out.
+
+00:20.770 --> 00:28.870
+And as you can see we have the proper execution roll access policy as we can see from S three and cloud
+
+00:28.870 --> 00:30.050
+watch logs.
+
+00:30.520 --> 00:38.500
+And if you go below with our function code we can definitely check out our source code from here.
+
+00:38.500 --> 00:44.490
+And as we can see with the runtime we have no J as a top 10 runtime.
+
+00:44.860 --> 00:52.100
+And we have the proper Flunder the function handler and we have the proper execution roll.
+
+00:52.170 --> 00:55.770
+We have the proper memory and timeout.
+
+00:55.860 --> 01:01.140
+So we basically have everything we need for our nodes as lambda.

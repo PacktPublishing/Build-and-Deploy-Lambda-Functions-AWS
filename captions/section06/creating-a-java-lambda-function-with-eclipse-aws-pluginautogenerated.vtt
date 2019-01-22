@@ -1,0 +1,304 @@
+WEBVTT
+
+00:02.100 --> 00:07.850
+So now we're ready to develop our first AWOS lambda function with the Jawa.
+
+00:07.890 --> 00:16.240
+So as you can remember we could access the AWOS benefits with A W-S toolkit using a clip side.
+
+00:16.440 --> 00:22.170
+And I should recommend you this method because this is basically the easiest way to get up and running
+
+00:22.440 --> 00:25.240
+with AWOS chawal lambda functions.
+
+00:25.260 --> 00:30.960
+So I'm just going to go and close this window to show you back again how we could access this.
+
+00:31.080 --> 00:39.210
+So from the File menu if we go down under the new option and from there to the other and let's just
+
+00:39.210 --> 00:40.620
+type in AWOS.
+
+00:40.680 --> 00:44.760
+And as you can see we have various options regarding lambda functions.
+
+00:45.090 --> 00:51.610
+So you can basically create a template a project to use against a AWOS API.
+
+00:51.720 --> 00:58.940
+With AWOS Jallow project and you can create a simple and a function and you can have a package revision
+
+00:58.950 --> 01:06.300
+of the lambda function using the AWOS lambda Java project and you can also create a surrealist Java
+
+01:06.300 --> 01:10.430
+project using various other technologies from AWOS.
+
+01:10.440 --> 01:16.080
+So in our case we're going to go and create AWOS lambda Java project.
+
+01:16.080 --> 01:22.610
+So now all selected a W-S lambda Java project since we're going to package this as a jar file.
+
+01:22.710 --> 01:27.760
+So we're going to upload this jar file using our Python and both those re-application.
+
+01:27.960 --> 01:36.090
+So I'm going to go and hit next and from there I'm going to go and give my project and name and I'll
+
+01:36.090 --> 01:41.760
+say Java lambda.
+
+01:42.350 --> 01:44.240
+And of course function.
+
+01:44.240 --> 01:45.130
+All right.
+
+01:46.810 --> 01:47.600
+Just like that.
+
+01:47.620 --> 01:55.720
+And for the Mavin configuration AWOS basically uses Mavin as its default but you can change that from
+
+01:55.720 --> 01:58.570
+the configuration of your toolkit plug in.
+
+01:58.810 --> 02:06.760
+So I'm just going to go and keep the basic group id artifact ID version and package name for my function
+
+02:07.630 --> 02:14.290
+and for the input type as you can see from the dropdown options you have various ways you can implement
+
+02:14.440 --> 02:22.100
+your function for various events from other AWOS services so you can basically catch as three events.
+
+02:22.180 --> 02:29.590
+You can catch dynamo D-B events you can process as N.S. or simple notification service events Kinesis
+
+02:29.650 --> 02:31.450
+events and so on.
+
+02:31.450 --> 02:36.880
+So in our case we're going to go incrementally with our implementation.
+
+02:36.880 --> 02:41.740
+I'm just going to go and select the custom version since this is going to give us the template that
+
+02:41.740 --> 02:45.870
+we need that we can start off and implement incrementally.
+
+02:45.940 --> 02:52.790
+So after selecting this I'm just going to go and hit finish.
+
+02:52.820 --> 02:59.960
+So now our project is being created and various other dependencies that are required for our project
+
+02:59.960 --> 03:03.490
+is being fetched from the Mavin central repository.
+
+03:03.500 --> 03:04.220
+As you can see
+
+03:06.940 --> 03:08.880
+and here we go.
+
+03:09.250 --> 03:17.950
+And as you can see AWOS provides us a fine and nice read me file so that we can learn how we can implement
+
+03:17.950 --> 03:20.520
+our function and we can test our function.
+
+03:20.680 --> 03:28.750
+And after that we can even use the toolkit to upload and invoke our AWOS lambda function with an eclipse
+
+03:28.750 --> 03:29.960
+ID.
+
+03:29.980 --> 03:34.870
+That's basically and perfectly fine and you can go ahead and try this.
+
+03:34.900 --> 03:38.370
+But in our case we're going to develop our function right here.
+
+03:38.470 --> 03:40.600
+And then we're going to upload.
+
+03:40.630 --> 03:45.780
+And we're going to deploy our function basically using our Python application.
+
+03:45.790 --> 03:48.790
+So now let's just go and browse our project
+
+03:53.000 --> 04:00.410
+and within our project as you can see we have the Mavin packaging style for our application our Hendler
+
+04:00.410 --> 04:06.690
+murtherer or händler class is located under our C slash main slash Java.
+
+04:06.710 --> 04:15.140
+So if we go down here you can see under the package name com dot Amazon a W-S dot lambda D-Mo. and you
+
+04:15.140 --> 04:22.710
+can see our lambda function händler Java class and within that class as you can see we have our handler
+
+04:22.730 --> 04:23.640
+method.
+
+04:23.960 --> 04:31.490
+And you can see that we are implementing requests handler from a W-S and request handler is giving us
+
+04:31.490 --> 04:39.440
+the handle request method that we have to overwrite so that we can basically catch and implement our
+
+04:39.440 --> 04:41.620
+logic within our lambda function.
+
+04:41.780 --> 04:48.200
+So all you have to do has to happen between these lines between these methods lines.
+
+04:48.200 --> 04:54.530
+So you're going to have to cast your actions within the handle request method as we always did with
+
+04:54.530 --> 04:57.210
+our previous handlers with Python and no.
+
+04:57.250 --> 04:57.780
+Yes.
+
+04:57.950 --> 05:01.820
+And then you can create any more classes you want.
+
+05:01.820 --> 05:03.750
+Any other operations you want.
+
+05:03.800 --> 05:09.430
+And you can basically delegate those actions to those classes to those methods and so on.
+
+05:09.830 --> 05:14.480
+So in our case as you can see we have a basic implementation.
+
+05:14.570 --> 05:21.170
+Hello from Lambda which is nice because otherwise you're going to have to implement and type in all
+
+05:21.170 --> 05:25.190
+these intricate details about Jawohl lambda functions.
+
+05:25.190 --> 05:28.870
+So to improve this return statement a little bit.
+
+05:28.970 --> 05:38.230
+I'm just going to say hello from Java to indicate this is a job with lambda function.
+
+05:38.230 --> 05:39.900
+Java lambda function.
+
+05:40.010 --> 05:48.110
+All right so now this is basically going to be our return statement from our Java lambda function and
+
+05:48.680 --> 05:53.240
+we're ready to create a package for our lambda function right now.
+
+05:53.240 --> 06:00.710
+So again this is the fundamental way to create and the easiest way to create Java lambda functions using
+
+06:00.740 --> 06:04.750
+a double us and basically using DAWE AS toolkit.
+
+06:05.000 --> 06:11.540
+So the next thing that you're going to have to do is to create the jar file so that you can upload it
+
+06:11.840 --> 06:21.980
+to your AWOS lambda functions go and right click on your project and for them they're under the rock
+
+06:22.010 --> 06:24.920
+as many as you can see.
+
+06:24.980 --> 06:32.270
+You really have to first do a Mavin clean so that you can clean up your build directory and various
+
+06:32.330 --> 06:34.850
+other unnecessary resources.
+
+06:34.850 --> 06:35.460
+All right.
+
+06:35.630 --> 06:42.350
+So our clean process is successful and if we go back again and right click back again under the run
+
+06:42.350 --> 06:48.320
+as Manue to create our jar file I'm going to go and click on an install.
+
+06:48.350 --> 06:50.230
+All right.
+
+06:50.460 --> 06:57.600
+So with this may even install it is going to collect all the necessary dependencies to package my project
+
+06:57.600 --> 07:03.970
+package my Alamdar function as a jar file executable jar file and then is going to provide me a jar
+
+07:03.970 --> 07:08.340
+file so I can upload to my AWOS account.
+
+07:08.490 --> 07:15.820
+So as you can see we have a failing test which was basically expecting Hello from Lambda and we provide
+
+07:15.820 --> 07:16.760
+it.
+
+07:16.770 --> 07:18.880
+Hello from Java lambda function.
+
+07:18.900 --> 07:21.340
+So let's just go and fix that test.
+
+07:21.390 --> 07:27.510
+So it is basically expecting this text for the response from the lambda function.
+
+07:27.750 --> 07:35.760
+And if we go under our as our last tests last Jubba and from there if we go under the same test file
+
+07:35.820 --> 07:42.360
+of our class and we can basically change this tax so that we can pass our test.
+
+07:42.600 --> 07:49.130
+So this is basically how you test you'll end a function with Java and by the way we're seeing that option.
+
+07:50.070 --> 07:52.310
+So I'm just going to go and paste it.
+
+07:52.560 --> 07:58.380
+And of course I forgot to provide my quotation marks.
+
+07:58.380 --> 08:00.570
+So let's just do that again.
+
+08:00.590 --> 08:02.160
+And here we go.
+
+08:02.160 --> 08:11.180
+So now if we go and right click on our project again and run as an Mavin install We should be successful
+
+08:11.180 --> 08:15.750
+this time and our job package must be created.
+
+08:15.920 --> 08:27.120
+Once this is finished and here we go our bill is successful and our D-Mo. one that 0.0 jar file is installed
+
+08:27.210 --> 08:34.920
+under our target directory and if we go under target directory from our project browser we can see our
+
+08:35.130 --> 08:39.410
+D-Mo. dash one that 0.03 jar file.
+
+08:39.420 --> 08:44.400
+So this is basically the package of our lambda function for Java.
+
+08:44.400 --> 08:50.800
+So in the next video we're going to use this char file and we're going to deploy it to a W-S.
+
+08:50.970 --> 08:53.450
+So to do that I'll see you on the next video.

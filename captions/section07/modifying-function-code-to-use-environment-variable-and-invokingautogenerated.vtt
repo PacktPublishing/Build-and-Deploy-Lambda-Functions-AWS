@@ -1,0 +1,244 @@
+WEBVTT
+
+00:01.850 --> 00:07.200
+Know we know how we can apply environment variables to our lambda functions.
+
+00:07.290 --> 00:13.890
+So let's learn how we can make use of those environment variables within our lending functions and properly
+
+00:13.920 --> 00:20.120
+implement a way to read those variables and make some processing with them.
+
+00:20.130 --> 00:27.870
+So let's go to our Python lambda function for the purpose Ulisses update to code so that we can make
+
+00:27.870 --> 00:30.920
+use of our environment variables.
+
+00:31.110 --> 00:34.810
+So I'm basically going to comment these lines out.
+
+00:35.220 --> 00:38.180
+So let's just comment all that.
+
+00:38.190 --> 00:46.740
+So after our comment thing is done let's basically provide our environment variable reading process
+
+00:46.830 --> 00:50.280
+and to read an environment variable within Python.
+
+00:50.280 --> 00:58.140
+You're going to have to make use of the OS library from Python included libraries so we first have to
+
+00:58.140 --> 00:59.480
+import os.
+
+00:59.670 --> 01:01.370
+And here we go.
+
+01:01.500 --> 01:09.810
+And after we have the OS library let's just go and read our environment variable and let's say environment
+
+01:09.810 --> 01:10.770
+variable.
+
+01:11.310 --> 01:16.570
+And after that I'll call O S that yet environment.
+
+01:16.770 --> 01:22.500
+And for that all I have to provide is the key of my environment variable.
+
+01:22.500 --> 01:30.300
+And for that purpose let's go back and copy this qualifier are the key of our environment variable and
+
+01:30.640 --> 01:32.550
+paste it just like that.
+
+01:32.550 --> 01:38.900
+So what I want to do now is I want to return this message and which is this message.
+
+01:38.910 --> 01:45.520
+As you can see here and I want this to be returned as I did with this message right here.
+
+01:45.540 --> 01:54.930
+So let's just return within a dictionary as the status code is going to be same 200.
+
+01:55.260 --> 02:04.110
+And after my status code within the message part I'm just going to pass in my environment variable which
+
+02:04.110 --> 02:06.570
+is again going to be this message.
+
+02:06.570 --> 02:08.380
+This is an environment variable.
+
+02:08.450 --> 02:15.930
+All right so now let's go back to our main implementation and change our code change our lambda function
+
+02:15.930 --> 02:20.120
+code and then see this invocation in action.
+
+02:20.130 --> 02:24.540
+So let's go back and forth on there.
+
+02:25.080 --> 02:29.070
+And also let's just comment all these lines out.
+
+02:32.520 --> 02:43.170
+All right so now let's just go under our comment lines and from there let's create a method to update
+
+02:43.230 --> 02:45.090
+our function code.
+
+02:45.090 --> 02:54.770
+And for that purpose I'll say def update lambda function code.
+
+02:54.950 --> 03:03.330
+All right so for updating my function code I want this to be reusable as much as possible so I'll pass
+
+03:03.330 --> 03:04.710
+on a function name.
+
+03:08.180 --> 03:17.360
+And after the function name that I've pro-white I want to pass in the folder today I'm going to read
+
+03:17.360 --> 03:18.580
+my source files.
+
+03:18.590 --> 03:21.160
+So let's just say sourceforge.
+
+03:22.060 --> 03:24.740
+And then let's just say.
+
+03:25.300 --> 03:32.590
+And in this case as you can remember from our first deploying method we were reading our file as the
+
+03:32.590 --> 03:40.930
+zip file and we were passing in the bytes of that file to a WS as our code so we can basically reuse
+
+03:40.930 --> 03:45.440
+those methods as we can do with our updating function code.
+
+03:45.460 --> 03:51.310
+So no what I'm going to do is I'm going to copy these lines and I'm just going to extract what I need
+
+03:51.310 --> 03:52.330
+from there.
+
+03:52.330 --> 03:58.670
+So let's just copy those and paste that in and let's just get rid of this statement.
+
+03:58.780 --> 04:02.760
+And also let's fix this line and indentation of that.
+
+04:03.100 --> 04:04.500
+And here we go.
+
+04:04.510 --> 04:10.400
+So now we could read the zip file that we need to update our function code.
+
+04:10.480 --> 04:14.630
+All I have to do is call our API for updating process.
+
+04:14.680 --> 04:23.450
+So let's just return when the client dot update function code.
+
+04:23.470 --> 04:25.290
+All right.
+
+04:25.390 --> 04:37.460
+So within this update function code statement I'll say function name equals function name and the zip
+
+04:37.460 --> 04:46.810
+file which is what I'm interested in for updating process equals to let's just fix that typo there.
+
+04:46.860 --> 04:53.380
+And it is basically the zip file that I created using my you to of the method.
+
+04:53.760 --> 04:54.360
+All right.
+
+04:54.540 --> 04:58.940
+That's basically all you have to do to update your lambda function code.
+
+04:59.340 --> 05:09.120
+So if I go down here and call this method and let's say update lambda function code and for the function
+
+05:09.120 --> 05:12.420
+name I'll provide PI thung lambda name.
+
+05:12.720 --> 05:21.030
+And for the path I can basically copy and paste the python lambda we try using the same thing basically
+
+05:21.030 --> 05:27.590
+the same source file that I have but this time it is updated to use environment variables.
+
+05:27.600 --> 05:34.970
+So now let's just print out the response from AWOS to see if successful or not.
+
+05:35.070 --> 05:37.230
+And now I can basically go and hit run
+
+05:40.340 --> 05:41.550
+here we go.
+
+05:41.660 --> 05:46.100
+Our process is successful and we have 200 status code.
+
+05:46.130 --> 05:54.740
+Ok now we can go and invoke them to function again to see our environment variable as the response in
+
+05:54.740 --> 05:55.940
+action.
+
+05:55.940 --> 06:02.500
+And to do that I'm basically going to copy these lines so that we can call our Python lambda function
+
+06:02.990 --> 06:09.190
+and I'll just go down here and paste them in and I'll just uncomment this lines.
+
+06:09.300 --> 06:10.040
+All right.
+
+06:10.270 --> 06:15.240
+And so we can basically comment this line out so that we don't need that anymore.
+
+06:15.350 --> 06:20.750
+And now we can basically call our run method and see what's going to happen.
+
+06:22.010 --> 06:27.130
+So I'm just going to go and run and we should see the output as we expect.
+
+06:27.350 --> 06:28.690
+And here we go.
+
+06:28.970 --> 06:36.310
+We could get the message as this is an environment variable just as we updated our lambda function code
+
+06:36.350 --> 06:37.870
+and AWOS.
+
+06:38.450 --> 06:43.100
+And if we go to our Ada we use Konsole to verify this.
+
+06:43.140 --> 06:45.860
+And let's just go and refresh this page.
+
+06:48.920 --> 06:56.260
+And if we go to do function code it is not updated yet.
+
+06:56.370 --> 07:02.730
+We first have to go and refresh maybe in her refresh would be OK to do so.
+
+07:04.950 --> 07:10.630
+And here we go we have our function code updated as we expect it.
+
+07:10.680 --> 07:17.520
+So this is basically how you update your function code and how you apply environment variables to your
+
+07:17.520 --> 07:20.510
+functions on a W-S lambda.
+
+07:20.580 --> 07:21.560
+Simple as that.

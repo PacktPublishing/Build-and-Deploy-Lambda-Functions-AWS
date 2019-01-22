@@ -1,0 +1,238 @@
+WEBVTT
+
+00:00.750 --> 00:03.990
+So let's just create our utils class.
+
+00:04.020 --> 00:13.110
+So for that purpose I'm going to go down to my source directory and I'm going to create a new python
+
+00:13.110 --> 00:17.610
+file and I'm just going to name it as you Tilse.
+
+00:17.610 --> 00:18.910
+All right.
+
+00:19.260 --> 00:29.000
+So within this utils class let's first declare our class and let's just say you're Tilse.
+
+00:29.070 --> 00:34.480
+All right within this class I'm going to have a couple of static methods.
+
+00:34.860 --> 00:43.820
+So of course the first method is going to be let's just go back and copy our method make zip file bytes.
+
+00:43.830 --> 00:45.260
+All right.
+
+00:46.140 --> 00:54.800
+So let's just define our method of course and provide the path argument to it.
+
+00:54.800 --> 01:04.940
+So with this method I'm going to provide the zip file path and I'm going to create the zip file with
+
+01:04.940 --> 01:08.190
+the source directory to diapason.
+
+01:08.270 --> 01:19.050
+So for creating our zip file I first have to create a package for the cpp files to be put in.
+
+01:19.050 --> 01:26.850
+So for this purpose to get the actual bytes of this zip file zip package I have to first create the
+
+01:26.850 --> 01:28.260
+zip file itself.
+
+01:28.290 --> 01:34.510
+So for creating the zip file itself I'm going to have another method calling this method.
+
+01:34.950 --> 01:42.470
+So I'll create another static method and I'm going to say files to zip.
+
+01:42.480 --> 01:49.830
+So basically as you can get from the name of this method I'm going to pass in the path of the files
+
+01:50.160 --> 01:58.970
+to be put into my zip package and I'm just going to basically return the files to be passed into AWOS.
+
+01:59.040 --> 02:06.930
+So within this method I'm going to walk the path of the files so I can get all the files individually
+
+02:07.170 --> 02:11.210
+and I can put those file into my zip archive.
+
+02:11.220 --> 02:18.600
+So let's just start walking our directory so for root directories.
+
+02:18.690 --> 02:22.000
+And of course the files on the directories.
+
+02:22.140 --> 02:29.040
+I'm going to have to make use of oil gas and oil walk method so I can't walk between the files in my
+
+02:29.310 --> 02:30.600
+operating system.
+
+02:30.600 --> 02:40.020
+So let's just go and import os and let's just go back to our for loop and let's just say all us that
+
+02:40.080 --> 02:52.680
+walk and pass in the path that we have and for f and file so I'm basically walking each file I'm passing
+
+02:52.680 --> 02:54.480
+in by each file.
+
+02:54.480 --> 02:58.350
+Let's get the full path to the file.
+
+02:58.740 --> 03:09.030
+And let's just say OS the path dot join so I can get the full path not just the abstract path for that
+
+03:09.030 --> 03:09.980
+file.
+
+03:10.220 --> 03:18.270
+I'm going to provide the root directory and the file name itself so I can basically join them and I'm
+
+03:18.270 --> 03:27.020
+going to create an arcane name for my archive naming purposes and I'm going to use the full path.
+
+03:27.240 --> 03:35.250
+And of course the length of the path as an indicator to that archive name.
+
+03:35.250 --> 03:47.820
+And also I'm going to concatenate the always dot separators and also I'm going to indicate the end of
+
+03:47.820 --> 03:49.270
+that full path.
+
+03:50.010 --> 03:51.500
+And sorry about that.
+
+03:51.510 --> 03:55.730
+I just passed in the wrong indicator here.
+
+03:55.890 --> 04:03.900
+So this is going to be basically an array and I'm just passing in the length of the path and concatenating
+
+04:03.900 --> 04:07.220
+that with the separators for the path.
+
+04:07.230 --> 04:12.560
+So I'm getting a very qualified very unique archive name.
+
+04:12.570 --> 04:14.280
+All right.
+
+04:14.660 --> 04:19.220
+And I'm just going to yield a result from that archive.
+
+04:19.290 --> 04:25.340
+And basically I'm just going to pass that back in to the caller method which is going to be our make
+
+04:25.380 --> 04:26.910
+zip file buys method.
+
+04:27.020 --> 04:33.010
+So let's just pass in the full path and the Archive name so we can make use of those.
+
+04:33.020 --> 04:33.730
+All right.
+
+04:34.100 --> 04:41.840
+So this is the function that we're going to use to put our resource file with our source files to a
+
+04:41.840 --> 04:42.830
+zip package.
+
+04:42.830 --> 04:44.030
+All right.
+
+04:44.030 --> 04:52.700
+So let's just go up here now and let's just implement our bytes method so we can read the Z package
+
+04:52.760 --> 04:59.480
+that we created with our files the zip method and we can get the bytes we can read the bytes of that
+
+04:59.480 --> 05:00.020
+meant.
+
+05:00.140 --> 05:03.860
+So we can pass that into a W-S.
+
+05:03.860 --> 05:12.020
+So I'm just going to have a buffer for my bytes and then I'm just going to make use of input and output
+
+05:12.020 --> 05:13.800
+library of Python.
+
+05:13.820 --> 05:24.310
+So this is important right now and I'll say the input and output and bytes you know.
+
+05:24.410 --> 05:27.230
+So I'm just going to get a reference to it.
+
+05:27.380 --> 05:33.820
+So I'm going to use the zip file and I'm going to read that zip file.
+
+05:33.820 --> 05:36.780
+So let's just say zip file.
+
+05:37.080 --> 05:40.830
+And of course to read his zip file with Python.
+
+05:41.000 --> 05:42.790
+I'm going to have to import it.
+
+05:42.800 --> 05:54.120
+So let's just go down here and from ZIP file import zip file.
+
+05:54.170 --> 06:03.740
+All right so now let's go back to our zip file and let's just read our buffer with the right permissions
+
+06:04.280 --> 06:06.300
+as Zehr.
+
+06:06.460 --> 06:07.340
+All right.
+
+06:07.850 --> 06:17.210
+And for our full path and the Archive name we just want to read the files to zip method argument passing
+
+06:17.210 --> 06:21.970
+back to us and we're going to have to write all the bytes to our buffer.
+
+06:22.190 --> 06:23.340
+That's basically the idea.
+
+06:23.330 --> 06:26.220
+That's basically the point we're writing this method.
+
+06:26.330 --> 06:30.390
+So let's just say for full path.
+
+06:32.530 --> 06:46.980
+And also our code name kind of name passed back to us from of course our Eutelsat files to zip method.
+
+06:47.390 --> 06:52.310
+And of course the path would be the path itself.
+
+06:52.310 --> 06:56.630
+So now we're going to have to write everything to our buffer.
+
+06:56.660 --> 07:06.800
+So let's just say Zepps that greit full path and also the archive name.
+
+07:06.800 --> 07:12.140
+So eventually we're going to have to return our buffer.
+
+07:12.770 --> 07:18.980
+And of course the value of our buffer not just the object itself.
+
+07:19.010 --> 07:22.150
+We're gonna need to rally of our buffer.
+
+07:22.280 --> 07:23.650
+All right.
+
+07:23.990 --> 07:33.270
+So this is basically our implementation for creating bytes of the zip file for AWOS to understand.

@@ -1,0 +1,217 @@
+WEBVTT
+
+00:01.710 --> 00:07.920
+As we discuss within our previous video we're going to need an execution role for our lambda function
+
+00:08.340 --> 00:13.940
+so that we can process our actions against AWOS on our health.
+
+00:13.950 --> 00:18.370
+So we're going to have to delegate our intentions to this lambda function.
+
+00:18.630 --> 00:25.010
+And for that purpose let's just go and create an execution role for our lambda function.
+
+00:25.350 --> 00:37.020
+So what I'm going to do is I'm going to define my method and say create execution role for lambda.
+
+00:37.200 --> 00:38.840
+All right.
+
+00:39.150 --> 00:50.980
+So let's go down here and let's just say lambda execution assumption.
+
+00:51.090 --> 01:01.020
+Raul and we're going to provide a dictionary just like we did with our policy and in this time we're
+
+01:01.020 --> 01:05.430
+going to provide an I am roll and for all.
+
+01:05.490 --> 01:10.950
+The first thing that we're going to have to provide is diversion and I'm going to use the same version
+
+01:11.010 --> 01:13.860
+I use for my I am policy.
+
+01:13.880 --> 01:25.260
+Now let's just say 2012 10 and 17 and let's just provide our statement and within our statement within
+
+01:25.260 --> 01:33.030
+our array definition I'm going to provide my dictionary and within my dictionary first thing I have
+
+01:33.030 --> 01:37.310
+to provide is of course the effect I'm going to provide.
+
+01:37.550 --> 01:42.930
+I want to allow my lambda function to execute these actions.
+
+01:43.050 --> 01:56.210
+And for the principle of this role I'll say in a dictionary format and the service for the principle
+
+01:56.210 --> 02:00.220
+of this action is going to be lammed of course.
+
+02:00.230 --> 02:05.910
+So Lamda got Amazon A W-S dot com.
+
+02:06.020 --> 02:07.060
+All right.
+
+02:07.460 --> 02:15.190
+And after my principle Definition Of course I have to pass in my action my intention.
+
+02:15.180 --> 02:21.060
+So let's just say SD assume role.
+
+02:21.080 --> 02:26.700
+So this is the basic definition for an execution role for a lambda function.
+
+02:26.900 --> 02:34.910
+So what we said within the action statement is we go to the ADA we use token service and we assumed
+
+02:35.030 --> 02:37.780
+the role for our lambda function.
+
+02:37.830 --> 02:45.590
+So with this role with this permission from A W-S I am we could execute our actions within our lambda
+
+02:45.590 --> 02:46.160
+code.
+
+02:46.310 --> 02:53.600
+Otherwise if we don't have a proper execution role we cannot do anything against any resource on a AWOS
+
+02:53.960 --> 02:57.010
+are we and the function would be useless.
+
+02:57.020 --> 03:03.570
+So execution role is one of the fundamental building blocks of a Alamdar function.
+
+03:03.680 --> 03:07.830
+And again without an execution roll call them the function is useless.
+
+03:07.880 --> 03:12.650
+So let's go down and create our execution roll.
+
+03:12.650 --> 03:14.830
+So I'll say return.
+
+03:15.560 --> 03:19.430
+I am client and this time create rule.
+
+03:19.580 --> 03:20.480
+All right.
+
+03:20.660 --> 03:26.960
+So for our create Groll method you first have to pass in a roll name.
+
+03:27.230 --> 03:39.620
+So for a stroll name I'm going to create a constant variable up top with Cisco up now and create a constant
+
+03:40.070 --> 03:42.360
+for our execution roll.
+
+03:43.520 --> 03:57.770
+And let's say Lamda roll and let's just say lambda underscore execution underscore roll just like that
+
+03:59.270 --> 04:01.120
+and why we do that.
+
+04:01.160 --> 04:08.510
+Let's not forget to get the policy Iran from our previous action before we lose that before we have
+
+04:08.510 --> 04:10.880
+to go to AWOS Council to get it.
+
+04:10.880 --> 04:17.750
+So let's just copy this because we're going to need it while we're attaching this axis policy to our
+
+04:17.840 --> 04:19.340
+execution role.
+
+04:19.340 --> 04:21.010
+So let's just copy now.
+
+04:21.080 --> 04:25.340
+And this is go up and say Lamda
+
+04:28.740 --> 04:29.610
+access
+
+04:31.980 --> 04:32.500
+policy
+
+04:35.280 --> 04:40.580
+Erin and just paste it all right.
+
+04:40.690 --> 04:48.450
+So now we can just go down and call our Methot and we can move on with our implementation.
+
+04:49.410 --> 04:58.450
+So our role name would be Lamda role and assume role policy document at this time.
+
+04:58.450 --> 05:02.380
+Again going to be a dump for our dictionary.
+
+05:02.430 --> 05:09.850
+So let's say Jason dumps and pass in our land that execution is Sumption role.
+
+05:10.230 --> 05:21.060
+And for that description let's just say give us and let's just not forget the commas there gives necessary
+
+05:22.530 --> 05:32.600
+per missions for lambda to be executed.
+
+05:32.600 --> 05:33.930
+All right.
+
+05:34.220 --> 05:38.720
+So this is how we create and I am role for our Alamdar function.
+
+05:39.140 --> 05:42.580
+So let's just go down and run it.
+
+05:42.620 --> 05:44.020
+So I'll print this out.
+
+05:44.030 --> 05:47.630
+So I'm going to need the air and for my role.
+
+05:47.690 --> 05:52.430
+So let's just say create execution role for LAMDA.
+
+05:52.840 --> 05:57.260
+So let's just comment this line out to avoid an error.
+
+05:57.290 --> 06:02.150
+So let's go and Hytrin.
+
+06:02.390 --> 06:03.720
+Here we go.
+
+06:03.830 --> 06:07.050
+Our execution roll is now created.
+
+06:07.220 --> 06:16.580
+So one of the things that we have to do of course get the execution roll air and for our roll on I am.
+
+06:16.580 --> 06:21.870
+So let's just go up and create a costume for that.
+
+06:22.220 --> 06:26.970
+And Lamda role Aaron is this one.
+
+06:26.990 --> 06:27.830
+All right.
+
+06:28.040 --> 06:36.890
+So we how our access policy we how our execution roll and the next step is going to be attaching these
+
+06:36.890 --> 06:44.660
+resources attaching our access policy to our execution role so we can make use of these and access the
+
+06:44.660 --> 06:48.620
+resources that we intended to do on our access policy.
+
+06:48.800 --> 06:51.490
+So to do that I'll be seeing you on the next video.

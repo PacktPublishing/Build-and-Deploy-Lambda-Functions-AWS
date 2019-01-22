@@ -1,0 +1,106 @@
+WEBVTT
+
+00:01.870 --> 00:05.170
+Now let's take a look at what we're doing to cowardness course.
+
+00:06.700 --> 00:13.690
+And this course as we always do with our AWOS with Python and both all three series we're going to work
+
+00:13.690 --> 00:19.750
+on a WS with Python and they both through three API of AWOS.
+
+00:19.780 --> 00:27.010
+So in this course of course I'll explain everything I do and everything I create against the API and
+
+00:27.010 --> 00:30.740
+the every piece of code that I write on my ID.
+
+00:30.880 --> 00:35.480
+But it is of course nice to know what AWOS lambda service is.
+
+00:35.650 --> 00:44.620
+So as you know AWOS lambda is the surrealists application framework from A W-S with AWOS lambda.
+
+00:44.680 --> 00:50.590
+You don't have to worry about the infrastructure or the resources that you need to run your code with
+
+00:50.620 --> 00:52.010
+AWOS lambda.
+
+00:52.030 --> 00:57.880
+All you have to do is to write your code and that is basically all you have to worry about.
+
+00:57.910 --> 01:06.270
+You just simply deploy your code to A W-S and AWOS takes care of running and managing your code lifecycle
+
+01:06.280 --> 01:07.660
+for you.
+
+01:07.660 --> 01:13.770
+So it is basically a managed service managed application framework service from A W-S.
+
+01:13.780 --> 01:22.000
+It is fundamentally the function runtime framework from a US both on the startup world and in the of
+
+01:22.000 --> 01:23.740
+course enterprise world.
+
+01:23.740 --> 01:28.320
+AWOS Lumba is in the heart of Sorrells applications.
+
+01:28.700 --> 01:38.830
+So without A.W. as Lamda you don't have the actual benefit of runtime was cloud AWOS lambda gives you
+
+01:38.830 --> 01:42.850
+the benefit you don't have to worry about your infrastructure.
+
+01:42.850 --> 01:46.330
+All you have to worry about your code and implementation.
+
+01:46.420 --> 01:49.920
+So that's basically the philosophy behind a W-S lambda.
+
+01:50.110 --> 01:52.640
+And as we do all OPAR code again.
+
+01:52.660 --> 01:57.190
+AWOS with using no jast Python and Java.
+
+01:57.190 --> 02:06.740
+You'll see how easy it is to create and deploy our code to AWOS So again just to get your attention
+
+02:06.740 --> 02:07.370
+here.
+
+02:07.370 --> 02:11.180
+This is a very hands on course within this course.
+
+02:11.180 --> 02:14.390
+We're not going to do anything manually.
+
+02:14.540 --> 02:23.120
+We only go to AWOS console to verify our actions our implementation and our API calls the rest of the
+
+02:23.120 --> 02:25.510
+Course is going to be very hands on.
+
+02:26.030 --> 02:34.100
+And we're going to of course develop our AWOS solution for AWOS Lamba from scratch using Python and
+
+02:34.100 --> 02:35.060
+both all three.
+
+02:35.210 --> 02:41.480
+And of course while we do that we're going to make use of an ID and for that purpose I'm going to use
+
+02:41.490 --> 02:47.630
+pi charm ID and just to mention that again will not do anything manually.
+
+02:47.630 --> 02:50.280
+It will all be automated with Python.
+
+02:50.300 --> 02:52.230
+And of course both are three.
+
+02:52.250 --> 02:57.580
+So now let's take a look at what we're going to build in this course so I'll see you on the next video.

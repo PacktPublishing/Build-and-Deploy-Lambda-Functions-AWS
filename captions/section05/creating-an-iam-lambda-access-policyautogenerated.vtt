@@ -1,0 +1,298 @@
+WEBVTT
+
+00:02.860 --> 00:10.650
+So for all and to be successful it invoked AWOS you're going to need a couple of things.
+
+00:10.720 --> 00:19.360
+And first of those is an access policy and access policy is based on I am policies identity and access
+
+00:19.360 --> 00:20.140
+management.
+
+00:20.260 --> 00:27.730
+So with an Access Policy lambda functions know where they can access and what resources they can connect
+
+00:27.730 --> 00:28.240
+to.
+
+00:28.510 --> 00:37.270
+So with I m or access policies for lambda we can define what other services we can make use of and what
+
+00:37.270 --> 00:39.480
+are our grant permissions.
+
+00:39.490 --> 00:49.210
+So with a proper access policy we'll be able to access S-3 resources on our AWOS account and to do that
+
+00:49.210 --> 00:56.320
+again we're going to have to create an access policy for our lambda function before we even create it.
+
+00:56.320 --> 01:06.100
+So now let's go and create ourselves an access policy for I am quite sure now what I'm going to do is
+
+01:06.160 --> 01:12.250
+I'm going to first create an I am client so I can create my policy.
+
+01:12.250 --> 01:20.350
+And again the policy is going to be based on all the policies and access management on a W-S is managed
+
+01:20.350 --> 01:23.820
+by I am or identity and access management.
+
+01:23.860 --> 01:30.810
+So the right place to create this policy is I am I cannot create this policy anywhere else.
+
+01:30.910 --> 01:37.380
+I have to create my policy on I am and I'm going to have to bind this with my function when I create
+
+01:37.380 --> 01:37.650
+it.
+
+01:38.810 --> 01:44.230
+So now let's create our I am client first down we can create our policy.
+
+01:44.390 --> 01:56.810
+So I'll say I am client and then I'll just simply say I am equals both of three and I am.
+
+01:57.100 --> 02:00.170
+And as you notice I'm not providing in your region.
+
+02:00.220 --> 02:05.170
+That's basically because I am is a global service from a double U.S..
+
+02:05.180 --> 02:12.780
+So after giving you this information I'm going to provide my type information so I can get the autocomplete
+
+02:12.790 --> 02:15.120
+benefits of Pi both all three.
+
+02:15.340 --> 02:22.890
+So let's say pi both three that I am here we go.
+
+02:22.900 --> 02:28.260
+So finally let's just return our I am client and there we go.
+
+02:28.570 --> 02:35.660
+So let's just focus on the task at hand which is to create an access policy for our lambda function.
+
+02:35.740 --> 02:47.210
+So I'm going to go down here and define my method and I'll say create an Access Policy for lambda.
+
+02:47.300 --> 02:48.370
+All right.
+
+02:49.020 --> 02:57.270
+So within this method I'm going to provide my access definition to my policy and I'm going to give it
+
+02:57.270 --> 03:04.030
+a name and description so I can create my proper access conditions for my lambda function.
+
+03:04.410 --> 03:08.770
+So the first thing to create is a policy document.
+
+03:09.000 --> 03:12.630
+So this document is going to be based on dictionary basically.
+
+03:12.660 --> 03:26.590
+So I'll say as three access policy document and I'm going to create a dictionary within the dictionary.
+
+03:26.610 --> 03:34.710
+The first thing that I provide is a version and that version is going to be any version for I am access
+
+03:34.710 --> 03:41.040
+policies so I'll pro-white 2012 10 and 17.
+
+03:41.040 --> 03:42.660
+All right.
+
+03:42.780 --> 03:50.440
+And the statement part is the most important part for and policies within this statement.
+
+03:50.670 --> 03:56.910
+I'll say what I want to access and what resources I want to access within those services.
+
+03:57.210 --> 04:03.700
+So within an array I'm going to provide my dictionary within this dictionary.
+
+04:03.810 --> 04:10.200
+I'm going to start by providing the action today I want for this Lamda to be executed.
+
+04:10.200 --> 04:14.540
+So within this action I'll provide my actions in an array.
+
+04:14.730 --> 04:20.840
+And the first thing that I want to do is of course access as three resources.
+
+04:20.940 --> 04:30.060
+So I'm going to say as three and then I'm going to provide an asterix to indicate I want to access anything
+
+04:30.060 --> 04:31.520
+about S-3.
+
+04:31.590 --> 04:40.920
+So if I said Get object and that will be a limitation for my S-3 access.
+
+04:40.950 --> 04:46.770
+Because with this way I could only get objects in an as three bucket.
+
+04:46.920 --> 04:49.070
+I could not do anything else.
+
+04:49.230 --> 04:55.900
+So let's just go back and provide an asterisk so we can access anything about as three.
+
+04:56.280 --> 05:04.680
+And for the next part for my lambda function to be monitored and for my log statements to be tracked
+
+05:04.680 --> 05:05.390
+properly.
+
+05:05.400 --> 05:08.100
+So I can see what's going wrong with my function.
+
+05:08.160 --> 05:15.960
+I want a couple of permissions on Klau watch and those permissions are basically to create low groups
+
+05:16.320 --> 05:20.280
+dreams and put some events within those Lokes.
+
+05:20.280 --> 05:27.600
+So this is a fundamental policy for any lambda function because otherwise you will not be able to see
+
+05:27.870 --> 05:30.330
+anything about your window function.
+
+05:30.630 --> 05:33.750
+AWOS doesn't give you this out of the box.
+
+05:33.810 --> 05:41.850
+You have to provide proper permissions for your access policy to go and create a low group Log statement
+
+05:41.910 --> 05:48.960
+or log stream and then put some events when something happens and when your function is invoked on a
+
+05:48.960 --> 05:50.140
+table with us.
+
+05:50.160 --> 06:01.320
+So the proper way to do is of course say logs and then create low group.
+
+06:01.630 --> 06:09.340
+And after that Laux create log stream.
+
+06:09.470 --> 06:17.390
+And finally I'll say logs and put log events.
+
+06:17.390 --> 06:19.890
+All right let's just face it typo there.
+
+06:22.360 --> 06:24.370
+And here we go.
+
+06:24.380 --> 06:29.390
+So this is basically the actions that I want to work on a deal with us.
+
+06:29.450 --> 06:32.150
+This is again my sole action today.
+
+06:32.150 --> 06:33.810
+I want to do by my head.
+
+06:33.950 --> 06:41.190
+And these three are basically what I want my lambda function to be monitored on the WS.
+
+06:41.420 --> 06:46.550
+So let's go down here and provide our other property.
+
+06:46.820 --> 06:55.190
+And of course for the effect part I want to love these actions to be executed on my behalf with my lambda
+
+06:55.190 --> 06:56.200
+function.
+
+06:56.300 --> 07:04.370
+And finally I'm defining the resource that I want these actions to be invoked and that is basically
+
+07:04.430 --> 07:08.330
+all the resources regarding the services.
+
+07:08.330 --> 07:12.200
+So this is basically my access policy.
+
+07:12.320 --> 07:16.360
+So let's go down here and create this access policy.
+
+07:16.760 --> 07:25.100
+So I'm just going to go hit return and call my client and I'll say create policy
+
+07:29.240 --> 07:31.010
+within my policy.
+
+07:31.010 --> 07:39.330
+The first thing that I have to provide of course a policy name and for my policy name I'll say Lamda
+
+07:40.690 --> 07:44.520
+as free access policy.
+
+07:44.520 --> 07:46.060
+All right.
+
+07:46.170 --> 07:51.300
+And my policy document is going to be my dictionary.
+
+07:51.300 --> 07:59.910
+But of course to dictionary to be useful on API call I have to dump it as a Jaison object.
+
+07:59.970 --> 08:09.140
+So to do that this is go up and import J song library from Python Nathu libraries import Jaison.
+
+08:09.480 --> 08:19.410
+And after that let's go back to our policy document and say Jaison dot dumps and let's say has three
+
+08:20.220 --> 08:22.920
+access policy document.
+
+08:23.550 --> 08:30.540
+And finally let's give this a description and say allows lambda
+
+08:33.060 --> 08:41.240
+function to access as three resources.
+
+08:41.240 --> 08:42.010
+All right.
+
+08:42.170 --> 08:43.820
+Just like that.
+
+08:43.850 --> 08:48.990
+So now let's go down and invoke our method and see what's going to happen.
+
+08:49.070 --> 08:55.370
+And for that purpose I'm going to create a main method within that main method I'm going to print out
+
+08:55.520 --> 08:57.530
+and I want to see what's going to happen.
+
+08:57.530 --> 09:02.460
+So I'm going just going to call my method just like that.
+
+09:02.480 --> 09:05.690
+So let's just go and hit Cryan and see what's going to happen.
+
+09:09.250 --> 09:20.000
+Here we go our I am policy is now create it with proper name and ID and the path and all the proper
+
+09:20.000 --> 09:24.190
+permissions that I wanted to create on I am.
+
+09:24.230 --> 09:32.840
+So this is basically how you can create a lambda function access policy and for this policy to be useful
+
+09:33.140 --> 09:40.640
+I have to create a lamb the execution roll and attach this policy to that execution roll so that I can
+
+09:40.640 --> 09:43.160
+actually access these resources.
+
+09:43.250 --> 09:49.240
+So to do that to create an execution role for our lambda function Augustinian the next video.

@@ -1,0 +1,109 @@
+WEBVTT
+
+00:01.400 --> 00:11.220
+So now let's deploy our No just Lamda and the first thing that we need for our notes is Lamda is a runtime.
+
+00:11.330 --> 00:19.630
+So for the runtime I'm just going to go and create a constant and from there I'll provide eight or 10
+
+00:19.650 --> 00:23.030
+runtime for my no js function.
+
+00:23.040 --> 00:24.060
+All right.
+
+00:24.140 --> 00:25.720
+So let's just say no.
+
+00:25.790 --> 00:29.340
+Yes a tad just like that.
+
+00:29.690 --> 00:38.680
+So now we can go down and call our analysis go deploy lambda function to create our No.
+
+00:38.690 --> 00:40.510
+Cheers lambda.
+
+00:40.650 --> 00:47.960
+And as you can remember from our previous lectures we created and designed this method to be as generic
+
+00:47.960 --> 00:49.290
+as possible.
+
+00:49.310 --> 00:57.600
+So now let's just go under our deploy lambda function call here and Lissa's comment this out and let's
+
+00:57.600 --> 01:03.440
+just print out the response from Ada with us and for our function name.
+
+01:03.770 --> 01:07.820
+Let's just go up and create a function name for our no G.
+
+01:07.820 --> 01:09.080
+Yes.
+
+01:09.080 --> 01:10.800
+So let's just say no.
+
+01:10.910 --> 01:18.850
+Yes Allister's delete all that and no G.
+
+01:18.880 --> 01:34.800
+Yes lambda name and for the name cause note G S lambda function just like that.
+
+01:34.810 --> 01:41.120
+So let's just scroll down and pass that in to our method.
+
+01:41.230 --> 01:42.690
+Let's just say no.
+
+01:42.820 --> 01:43.720
+Yes.
+
+01:43.900 --> 01:45.270
+Lambda name.
+
+01:45.510 --> 01:49.580
+And for the runtime eight or ten runtime.
+
+01:49.830 --> 01:57.130
+And Heller is going to be the same since we provided the same handling method for our package name and
+
+01:57.130 --> 01:58.130
+class name.
+
+01:58.420 --> 02:08.800
+So for every role when the roll around and forward the source folder we're going to provide the No just
+
+02:08.860 --> 02:10.520
+underscore lambda.
+
+02:10.540 --> 02:13.660
+All right so now let's just say no.
+
+02:13.690 --> 02:16.590
+Cheers underscore lambda.
+
+02:16.590 --> 02:18.070
+All right.
+
+02:18.350 --> 02:21.180
+So this is basically all we have to do.
+
+02:21.500 --> 02:28.070
+And let's just go down and call our method to see it in action.
+
+02:28.070 --> 02:29.360
+I'm just going to go in here.
+
+02:31.820 --> 02:33.050
+Here we go.
+
+02:33.050 --> 02:41.730
+Our lambda function is created as we expect it with two hundred and want a piece that is corrupt.
+
+02:41.780 --> 02:48.190
+So in the next year we're going to check out our Alamdar function on a W-S console.
+
+02:48.200 --> 02:49.720
+So I'll see on the next video.

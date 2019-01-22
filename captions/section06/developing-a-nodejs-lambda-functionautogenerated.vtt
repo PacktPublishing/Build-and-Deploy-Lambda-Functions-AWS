@@ -1,0 +1,115 @@
+WEBVTT
+
+00:01.520 --> 00:06.970
+Now we deployed our first lambda function as being the python lambda.
+
+00:07.100 --> 00:10.480
+And next up is a no jast lambda.
+
+00:10.730 --> 00:17.140
+And for that purpose let's just go and create our first javascript or not.
+
+00:17.250 --> 00:24.470
+Lamda and I'm just going to go to my source directory and from there I'm just going to create a directory
+
+00:24.710 --> 00:31.770
+and I'll say node g s underscore lambda just like that.
+
+00:32.140 --> 00:35.720
+And within my no just Lamda folder.
+
+00:35.840 --> 00:43.940
+I'm just going to create a javascript file and I'm going to name it as my python file so I can use the
+
+00:43.940 --> 00:47.510
+same qualifier for my Lemba handler.
+
+00:47.570 --> 00:54.280
+So I'll say lambda function just like that.
+
+00:54.350 --> 00:58.110
+So the extension would be of course yes.
+
+00:58.160 --> 01:03.430
+So now let's go and import our first notice lambda function.
+
+01:03.620 --> 01:11.690
+And for that purpose as if you're aware of not yes you're going to have to export the methods for public
+
+01:11.690 --> 01:14.090
+purposes and not yes.
+
+01:14.150 --> 01:22.110
+So for our handler method we're going to have to expose it and export it so that it can be invoked by
+
+01:22.460 --> 01:23.780
+us.
+
+01:23.780 --> 01:39.290
+So now let's just say exports dot händler And let's just say function within this function as we previously
+
+01:39.350 --> 01:41.600
+did with our Python function.
+
+01:41.780 --> 01:51.260
+We're going to pass in an event context and as an extra for javascript function I'm just going to provide
+
+01:51.290 --> 01:52.990
+a callback method.
+
+01:53.540 --> 02:00.950
+So this Colback method is basically the method that you write that you execute and then it is going
+
+02:00.950 --> 02:03.650
+to be called back to the executer.
+
+02:04.220 --> 02:06.810
+And I'll just show you that in a minute.
+
+02:06.890 --> 02:15.890
+And for our method implementation I'm just going to call my callback method so I can call this method
+
+02:16.850 --> 02:25.880
+within my handler method underscoring to pass in a null for my first argument of my callback method
+
+02:26.540 --> 02:37.980
+and I'm just going to pass in a string some success message to our method and after that I'm just going
+
+02:37.980 --> 02:42.700
+to return an indicator for that success.
+
+02:42.780 --> 02:51.050
+So let's just say status scoped is a dead 200.
+
+02:51.340 --> 03:02.720
+And our message would be let's just say this is the first note.
+
+03:02.920 --> 03:10.160
+J.S. lambda and that's basically all we have to do.
+
+03:10.180 --> 03:18.250
+So again for the purpose of this lecture you don't have to know or understand the Colback methods Colback
+
+03:18.250 --> 03:26.740
+methods is a nice way for javascript's and also a complicated way to communicate between methods and
+
+03:27.520 --> 03:31.040
+parameters and functions and arguments.
+
+03:31.060 --> 03:37.550
+So with this Colback method we'll be able to call our method with our handler method.
+
+03:37.570 --> 03:42.760
+So that's basically all you need to know and you don't have to worry about if you don't understand it
+
+03:43.300 --> 03:46.800
+and you can always go and check out the javascript callbacks.
+
+03:46.810 --> 03:49.080
+So after that information.
+
+03:49.180 --> 03:54.640
+Now let's just go back to our main implementation and deploy our noses.
+
+03:54.670 --> 03:55.310
+Lambda function.

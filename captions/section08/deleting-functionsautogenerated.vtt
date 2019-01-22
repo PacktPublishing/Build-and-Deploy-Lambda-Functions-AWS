@@ -1,0 +1,70 @@
+WEBVTT
+
+00:02.520 --> 00:09.900
+As with any other resources on AWOS you might have to delete your lambda functions and let's learn how
+
+00:09.900 --> 00:12.830
+we can do that and to do that.
+
+00:13.100 --> 00:23.410
+I'm just going to go up here and define my method and I'll say do eat Lamda
+
+00:26.580 --> 00:27.690
+function.
+
+00:27.720 --> 00:28.500
+All right.
+
+00:28.680 --> 00:35.060
+So I'll just pass in a function name so I can use it to delete my lambda function.
+
+00:35.520 --> 00:43.000
+And within my method I'm just going to say I'm the client that delete function.
+
+00:43.180 --> 00:45.340
+All right just like that.
+
+00:45.600 --> 00:53.560
+And I'm going to pass in the function name as my argument to this call.
+
+00:53.700 --> 00:59.650
+So let's just say function name equals to function name.
+
+00:59.680 --> 01:01.070
+All right.
+
+01:01.190 --> 01:02.880
+Let's just fix that typo.
+
+01:04.120 --> 01:05.550
+And here we go.
+
+01:05.620 --> 01:14.530
+So let's just go down and comment this line out first and let's just say do eat lambda function and
+
+01:14.710 --> 01:18.420
+this time I want to delete the no Chia's lambda function.
+
+01:18.440 --> 01:19.070
+All right.
+
+01:20.460 --> 01:26.340
+Now let's go and execute this method.
+
+01:26.350 --> 01:27.340
+Here we go.
+
+01:27.790 --> 01:37.510
+Let's switch back to our AWOS console and from there let's go to functions and as you can see we only
+
+01:37.510 --> 01:42.320
+have two functions and those are job Alamdar function in Python lambda function.
+
+01:42.340 --> 01:45.820
+We don't have any no Geass lambda function anymore.
+
+01:46.090 --> 01:54.940
+We successfully treated our No just lambda function and deleting your lambda functions is very straightforward.
+
+01:54.970 --> 01:56.020
+As you can see.

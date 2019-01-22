@@ -1,0 +1,40 @@
+WEBVTT
+
+00:01.390 --> 00:04.640
+Now let's take a look at what we're going to build in this course.
+
+00:05.870 --> 00:10.710
+And this scores of course we're going to make use of Python and both all three.
+
+00:10.910 --> 00:18.860
+And after that we're going to use A W-S lambda functions that it's going to be the basis of our course
+
+00:19.070 --> 00:23.390
+and we're going to focus around AWOS lambda and it's usage.
+
+00:23.750 --> 00:31.760
+And after that we're going to deploy our lambda functions one by one we're going to deploy a Java lambda
+
+00:31.760 --> 00:40.010
+function and once we've done that we're going to learn how we can deploy A.J. Lamda and then we're going
+
+00:40.010 --> 00:43.310
+to of course deploy a python lambda.
+
+00:43.340 --> 00:50.870
+So you're going to see how interactive the functions are and how you can make use of them with the proper
+
+00:50.870 --> 00:53.270
+permissions and proper runtime.
+
+00:53.300 --> 00:57.640
+As we see here with Python not just in Java.
+
+00:57.650 --> 01:04.400
+So to learn all about this to learn how we can create Java no Gere's and Python lambda functions how
+
+01:04.400 --> 01:08.910
+you can package them and how you can deploy them to AWOS.
+
+01:09.050 --> 01:13.750
+I'll be seeing you on the next videos where we're going to investigate how we can do that.

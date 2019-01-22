@@ -1,0 +1,40 @@
+WEBVTT
+
+00:01.390 --> 00:10.350
+So I opened up my AWOS castle and from there if I go to functions under a AWOS Lamda and here we go
+
+00:10.590 --> 00:13.300
+we have our Java lambda function.
+
+00:13.650 --> 00:16.840
+And let's just go and check out the details.
+
+00:17.190 --> 00:24.270
+And as you can see we have the proper policies applied and we could access as three cloud watch loads
+
+00:24.480 --> 00:27.000
+from our Java lambda functions.
+
+00:27.720 --> 00:31.100
+And so our job file is uploaded.
+
+00:31.200 --> 00:38.790
+And as you can see it is indicating that we have our code our job package for our application for our
+
+00:38.790 --> 00:39.930
+land the function.
+
+00:40.050 --> 00:48.750
+We have a proper Java 8 runtime we have the proper handler for our method and we have everything in
+
+00:48.750 --> 00:53.990
+place regarding execution roll and the memory and the timeout.
+
+00:54.090 --> 00:59.560
+So we're basically deployed our Java lambda function to A W-S.
+
+00:59.730 --> 01:06.320
+So to invoke these functions and work on these with versions aliases and much more.
+
+01:06.540 --> 01:07.950
+I'll see on the next section.

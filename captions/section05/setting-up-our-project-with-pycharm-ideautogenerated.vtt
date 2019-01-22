@@ -1,0 +1,121 @@
+WEBVTT
+
+00:01.900 --> 00:06.630
+Now let's go and create our project with my charm ID.
+
+00:06.820 --> 00:14.590
+So I already opened up my I.D. and I'm going to go and hit create new project and from there I'm going
+
+00:14.590 --> 00:16.620
+to select pure python.
+
+00:16.690 --> 00:20.430
+And after that I'm going to say Lamda
+
+00:22.770 --> 00:24.330
+underscore functions.
+
+00:24.330 --> 00:25.320
+All right.
+
+00:25.410 --> 00:29.780
+And for my interpreter I'm going to use the existing interpreter.
+
+00:29.790 --> 00:30.560
+All right.
+
+00:30.780 --> 00:37.090
+And then I'm going to go and simply hit create.
+
+00:37.090 --> 00:38.150
+There we go.
+
+00:38.440 --> 00:42.630
+We have our project created on PI charm ID.
+
+00:42.640 --> 00:53.040
+So let's go to our project main directory and from there from new Let's create a Python package and
+
+00:53.080 --> 00:58.690
+I'm going to name my package as SIRC and you can name yourself any way you like.
+
+00:58.690 --> 01:01.570
+So I'm going to go and hit enter.
+
+01:01.720 --> 01:05.090
+And here we go we have our SIRC package.
+
+01:05.200 --> 01:12.820
+And as you can see our initialiser is right there to indicate that this is a package from Python.
+
+01:12.820 --> 01:20.340
+So I'm going to right click on my SIRC directory and create a new python file.
+
+01:20.710 --> 01:33.850
+And for my python file I'm going to name it as lammed the functions.
+
+01:33.950 --> 01:39.650
+And here we go our land of functions that pi is ready.
+
+01:39.650 --> 01:47.290
+So now let's go and import both three so we can make use of the beauty of the library.
+
+01:47.330 --> 01:50.340
+So I'm going to say import both three.
+
+01:50.540 --> 01:51.770
+All right.
+
+01:51.950 --> 01:59.210
+And the very next thing that I'm going to do is of course create a client that we can make use of lambda
+
+01:59.210 --> 02:00.210
+functions.
+
+02:00.290 --> 02:13.090
+So I'm going to say def when the client and what I'm going to do is I'm going to get a reference to
+
+02:13.090 --> 02:15.810
+my client as a double use lambda.
+
+02:16.270 --> 02:23.470
+And from there I say both all three client and lambda.
+
+02:23.470 --> 02:24.260
+All right.
+
+02:24.460 --> 02:34.920
+For my region I'll say I'm going to use a region close to me so I'll say you west one.
+
+02:34.930 --> 02:36.580
+All right.
+
+02:36.580 --> 02:43.750
+And the next thing that I'm going to do is of course get the benefits of Pi both of three which is the
+
+02:44.080 --> 02:47.180
+autocomplete magic for PIJ Armande.
+
+02:47.200 --> 02:55.240
+So what I'll do is I'm going to put my combers there and from there I'll provide a type definition and
+
+02:55.390 --> 03:04.300
+let's say type in PI both of three dot lambda.
+
+03:04.300 --> 03:05.610
+All right.
+
+03:05.900 --> 03:11.500
+So the last thing that I have to do is of course return my Lamhe the client.
+
+03:11.510 --> 03:15.110
+So let's say return AWOS lambda.
+
+03:15.140 --> 03:16.240
+All right.
+
+03:16.250 --> 03:19.730
+So we're basically ready to move on with our project.
+
+03:19.850 --> 03:22.400
+So to do that I'll see you on the next video.

@@ -1,0 +1,160 @@
+WEBVTT
+
+00:01.900 --> 00:09.790
+On the lifecycle of a Alamdar function on AWOS there are basically two states and those are published
+
+00:09.820 --> 00:11.360
+or unpublished.
+
+00:11.830 --> 00:19.000
+So what those means are is that basically if you publish your function your function is visible from
+
+00:19.030 --> 00:26.610
+other AWOS services and that function can be invoked from other applications and services.
+
+00:26.830 --> 00:33.220
+And if you don't know the function name or any other qualifier of your function no one can discover
+
+00:33.220 --> 00:35.950
+or invoke your function.
+
+00:35.950 --> 00:40.190
+And until now we use the unpublished method.
+
+00:40.270 --> 00:47.200
+So our functions we're in in some kind of test mode or in a staging mode that we were just testing out
+
+00:47.380 --> 00:49.810
+and seeing how things work out.
+
+00:50.140 --> 00:56.740
+And now we're going to publish our function to the world than our function will be visible from other
+
+00:56.780 --> 01:03.730
+ADA youth services and other services can basically invoke our function using various other API and
+
+01:03.730 --> 01:05.770
+methods and so on.
+
+01:05.770 --> 01:13.450
+So now let's go back to our implementation and see how we can publish a version of our function because
+
+01:13.450 --> 01:20.650
+versioning is an important concept in AWOS publishing and to publish a method you're going to have to
+
+01:20.650 --> 01:25.750
+define a version and that version is basically provided by AWOS.
+
+01:25.870 --> 01:30.920
+If you don't provide it to do so and it is an incremental number and the version.
+
+01:30.920 --> 01:38.380
+So in this case if we publish a version to our lambda function and under the qualifier section as you
+
+01:38.380 --> 01:47.420
+can see our version is marked as latest and the aliases are as you can see it is unqualified.
+
+01:47.460 --> 01:51.970
+So this function is basically using all the latest of it can.
+
+01:51.990 --> 01:58.710
+So if we update this function We're always updating the latest version of the function not the version
+
+01:58.710 --> 02:00.090
+that we're interested in.
+
+02:00.090 --> 02:06.170
+So in a production like environment you're going to have to be careful about the version that you have.
+
+02:06.300 --> 02:11.220
+You're going to have to define version you're going to have to attach aliases which is what we're going
+
+02:11.220 --> 02:13.110
+to see in upcoming lectures.
+
+02:13.290 --> 02:19.250
+So you're going to have to be again careful about the versioning and publishing state of your function.
+
+02:19.650 --> 02:29.040
+So if we go back to our application and let's now implement how we can publish a version of our function.
+
+02:29.460 --> 02:38.970
+So now I'm just going to go down and I'll just implement my function as publish Lassus use publish name
+
+02:39.390 --> 02:50.850
+to be indicative and declarative about our intention publish a new version and from there I'll say function
+
+02:51.900 --> 02:58.150
+name to be an argument so that I can pass in any function name.
+
+02:58.200 --> 03:02.220
+So within this method I'll say when the client
+
+03:05.540 --> 03:13.860
+and after this Lambert client what I will do is basically publish underscore version.
+
+03:14.390 --> 03:18.690
+All right within this publish version method call.
+
+03:19.080 --> 03:27.850
+Well they all have to pass is the function name so AWOS API is going to take care of the rest of the
+
+03:27.850 --> 03:29.140
+process.
+
+03:29.140 --> 03:39.460
+All right so now I'll go down and let's just comment these lines out first and all I have to do is print
+
+03:39.460 --> 03:51.430
+out publish I was to say publish a new version and I'll pass in the Python lambda name.
+
+03:51.500 --> 03:52.770
+All right.
+
+03:53.000 --> 03:55.230
+Now let's go up and run.
+
+03:58.840 --> 04:00.150
+And here we go.
+
+04:00.250 --> 04:07.530
+Our request is successful and we could create a version as you can see with the HTP created status.
+
+04:07.570 --> 04:15.160
+So if we go back to our AWOS console and refresh our page and you should note this line not the versions
+
+04:15.370 --> 04:16.340
+existing versions.
+
+04:16.360 --> 04:18.400
+And I'm just going to go and hit three fresh
+
+04:23.240 --> 04:30.080
+and if we go back to qualifiers back again you'll see that we have basically two versions.
+
+04:30.150 --> 04:31.730
+We have the latest one.
+
+04:31.860 --> 04:34.090
+We have the version 1.
+
+04:34.110 --> 04:43.410
+So what we've done is we created a version like a branch of a source code recreated the version 1 and
+
+04:43.430 --> 04:47.550
+ific had changed the source code of the version 1.
+
+04:47.580 --> 04:53.810
+Before we published that function we would have a different version from the latest version of our home
+
+04:53.850 --> 04:54.770
+to function.
+
+04:55.050 --> 04:59.150
+So that's basically a difference of versions on AWOS.
+
+04:59.370 --> 05:06.900
+And as you saw with our example it is very easy to create and to do so to publish a new version of your
+
+05:06.900 --> 05:07.660
+lambda function.

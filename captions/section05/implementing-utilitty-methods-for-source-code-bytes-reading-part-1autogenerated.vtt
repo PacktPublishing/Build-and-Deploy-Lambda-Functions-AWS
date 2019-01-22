@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00.680 --> 00:03.440
+Now we're ready to deploy our lambda function.
+
+00:03.720 --> 00:12.300
+And for that purpose I'm going to go back to my lambda functions dot PI and I'm going to create my method
+
+00:12.690 --> 00:20.460
+to deploy my lambda function and I should note that I'm going to develop this method in a generic way
+
+00:20.500 --> 00:25.460
+as much as possible I can to make use of it while deploying.
+
+00:25.480 --> 00:26.360
+No.
+
+00:26.460 --> 00:37.750
+And Joel Lamda So let's just say create or to say deploy a lambda function.
+
+00:37.890 --> 00:39.030
+All right.
+
+00:39.120 --> 00:45.960
+So for this generic method I'm going to pass in a function name.
+
+00:46.200 --> 00:49.150
+This is going to be identifier for my function.
+
+00:49.470 --> 00:52.700
+And of course I'm going to need a run time for my function.
+
+00:52.710 --> 00:56.220
+Iturbi No Yes Python or Java.
+
+00:56.400 --> 01:03.550
+I'm going to need that runtime and I want to pass it in to my method so I can create other lambda functions.
+
+01:03.810 --> 01:10.800
+And also as I mentioned in our previous lecture I'm going to need a handler method to be the starting
+
+01:10.800 --> 01:19.890
+point for my lambda function and also I'm going to have to give my Alynda function the role as Ron Deadeye
+
+01:19.890 --> 01:22.120
+just created right here.
+
+01:22.160 --> 01:23.110
+All right.
+
+01:23.130 --> 01:25.900
+So let's just say roll air in.
+
+01:26.670 --> 01:35.430
+And finally I'm going to provide the sources to my lambda function the actual code to be executed to
+
+01:35.430 --> 01:37.310
+be invoked on AWOS.
+
+01:37.500 --> 01:42.260
+So I'll pass it in the folder path for my source code.
+
+01:42.510 --> 01:44.760
+So let's just say sourceforge.
+
+01:44.820 --> 01:45.970
+All right.
+
+01:46.410 --> 01:54.300
+So the first thing that I have to do is to read the files from the source folder to packaged him as
+
+01:54.330 --> 01:56.310
+a lambda function.
+
+01:56.310 --> 02:06.840
+So let's just say folder path and within that folder path I'm going to read the files as the Oist walking
+
+02:06.840 --> 02:07.750
+principles.
+
+02:07.860 --> 02:14.740
+So I'm going to go up and I'm going to import the path from OS.
+
+02:14.910 --> 02:22.290
+So let's just say from OS import path.
+
+02:22.420 --> 02:30.090
+All right so now let's just go down and move on with her implementation.
+
+02:30.090 --> 02:42.090
+Number two say path that join and I'm going to pass in the directory name and I'm going to get the absolute
+
+02:42.090 --> 02:51.270
+path to my directory so I can get the source files under my Python underscore lambda and I'm going to
+
+02:51.270 --> 02:55.950
+get that directory name with the file annotation.
+
+02:56.250 --> 03:01.170
+And then of course I'm going to pass in the source directory name.
+
+03:01.220 --> 03:01.840
+All right.
+
+03:01.980 --> 03:09.470
+So with this way I'm going to get all the files under my Python underscore lambda function.
+
+03:09.480 --> 03:16.290
+So with this method with this way you can basically create your lambda functions with all the proper
+
+03:16.290 --> 03:19.140
+resources under the same folder structure.
+
+03:19.440 --> 03:24.460
+And I'm going to show you in a minute how you can read everything under that directory.
+
+03:24.480 --> 03:27.240
+This is just a starting point to get that path.
+
+03:27.270 --> 03:35.340
+All right so now let's go to an important part for reading the lambda function resource files or source
+
+03:35.340 --> 03:35.810
+codes.
+
+03:35.820 --> 03:36.960
+In this case.
+
+03:37.440 --> 03:46.110
+So for that purpose for our Lenda function to be properly created as a package for AWOS to understand
+
+03:46.110 --> 03:52.540
+it we're going to have to create a zip package or a compressed binary file.
+
+03:52.830 --> 04:00.490
+And for that purpose I'm going to create a utility method so I can make use of that method with my notes
+
+04:00.550 --> 04:04.490
+G-S and met with my Jawa lambda functions.
+
+04:04.500 --> 04:15.320
+So for that purpose I'm going to say zip underscore file and I'm going to create a class called your
+
+04:15.330 --> 04:21.960
+tills and within that class I'm going to have a method and I'm just improvising right now as you can
+
+04:21.960 --> 04:25.420
+see and I'm going to provide implementation in a minute.
+
+04:25.450 --> 04:30.600
+Now I'm saying make zip file bytes.
+
+04:30.630 --> 04:31.770
+All right.
+
+04:32.040 --> 04:39.870
+So for that method I'm going to pass in the path and for that path it is going to be the folder path.
+
+04:40.080 --> 04:47.940
+So in this method in this makes zip file bite's method what I'm going to do is I'm going to access all
+
+04:47.940 --> 04:54.840
+the files under that directory under the directory that I provided as the source folder and I'm going
+
+04:54.840 --> 05:01.710
+to create a zip package of those files on for us to be processed properly.
+
+05:01.710 --> 05:09.210
+So with this way I'll be easily create my lambda functions just by putting all the resources under the
+
+05:09.210 --> 05:10.290
+same directory.
